@@ -81,18 +81,19 @@ caratula();
 
 short count = 0;
 
-
+UNI_OFF;
+DEC_OFF;
 
 
 while(1){
     
     
     
-    on_numbers(count);
-    _delay_s(1000);
+    write(count);
+    //_delay_s(1000);
     count++;
     
-    if ( count == 10) count = 0;
+    if ( count == 100) count = 0;
     
    // __delay_ms(98);
 }    

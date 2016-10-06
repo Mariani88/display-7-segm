@@ -1,15 +1,5 @@
 #include "display7seg.h"
 
-void clear_Segment(){
-    A_OFF;
-    B_OFF;
-    C_OFF;
-    D_OFF;
-    E_OFF;
-    F_OFF;
-    G_OFF;
-}
-
 void on_number(short number){
     
     switch (number){
@@ -53,10 +43,50 @@ void on_number(short number){
         A_ON; B_ON; C_ON; D_ON; E_OFF; F_ON; G_ON;
         break;
     }
-}    
+}   
 
-void on_numbers(short uni){
-    UNI_ON;
-    DEC_OFF;
-    on_number(uni);
+void clear_Segment(){
+    A_OFF;
+    B_OFF;
+    C_OFF;
+    D_OFF;
+    E_OFF;
+    F_OFF;
+    G_OFF;
+}
+
+void on_numbers(short number, bool uni){
+    
+    if(uni){
+        UNI_ON;
+        DEC_OFF;
+    }else{
+        UNI_OFF;
+        DEC_ON;
+    }
+    
+    on_number(number);
+}
+
+void write(short number){
+    int time = 0;
+    short dec = number/10;
+    short uni = number - dec*10;
+    clear_Segment();
+    while(time < 500){
+        
+        //on_numbers(uni, 1);
+        
+        on_number(uni);
+        UNI_ON;
+        DEC_OFF;
+        __delay_ms(10);
+        UNI_OFF;
+        on_number(dec);
+        DEC_ON;
+        __delay_ms(10);
+        DEC_OFF;
+        //on_numbers(dec, 0);
+        time = time + 20;
+    }
 }

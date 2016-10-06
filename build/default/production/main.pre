@@ -9790,9 +9790,8 @@ void lcd_setcursor_vb(int8 visible, int8 blink);
 void lcd_puts(char *ptr);
 void lcd_putrs(const char *ptr);
 
-# 7 "display7seg.h"
-void clear_Segment();
-void on_numbers(short uni);
+# 12 "C:\Program Files\Microchip\xc8\v1.34\include\stdbool.h"
+typedef unsigned char bool;
 
 # 7 "C:\Program Files\Microchip\xc8\v1.34\include\stdarg.h"
 typedef void * va_list[1];
@@ -9856,20 +9855,6 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 #pragma printf_check(sprintf) const
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
-
-# 98 "C:/Archivos de programa/Unimic/unmc_01/headers\unmc_lcd_216.h"
-void lcd_send_nibble(int8 nibble);
-int8 lcd_read_nibble(void);
-int8 lcd_read_byte(void);
-void lcd_send_byte(int8 address, int8 n);
-
-void lcd_init(void);
-void lcd_gotoxy(int8 x, int8 y);
-void lcd_putc(int8 c);
-void lcd_comand(int8 d);
-void lcd_setcursor_vb(int8 visible, int8 blink);
-void lcd_puts(char *ptr);
-void lcd_putrs(const char *ptr);
 
 
 # 15 "C:/Archivos de programa/Unimic/unmc_01/headers\unmc_config_01.h"
@@ -9945,6 +9930,50 @@ void Write_RTC(void);
 # 112
 void Read_RTC(void);
 
+# 14 "display7seg.h"
+void clear_Segment();
+void on_numbers(short number, bool uni);
+void write(short number);
+
+# 98 "C:/Archivos de programa/Unimic/unmc_01/headers\unmc_lcd_216.h"
+void lcd_send_nibble(int8 nibble);
+int8 lcd_read_nibble(void);
+int8 lcd_read_byte(void);
+void lcd_send_byte(int8 address, int8 n);
+
+void lcd_init(void);
+void lcd_gotoxy(int8 x, int8 y);
+void lcd_putc(int8 c);
+void lcd_comand(int8 d);
+void lcd_setcursor_vb(int8 visible, int8 blink);
+void lcd_puts(char *ptr);
+void lcd_putrs(const char *ptr);
+
+
+# 15 "C:/Archivos de programa/Unimic/unmc_01/headers\unmc_config_01.h"
+#pragma config CPUDIV=OSC1
+#pragma config CP0=OFF
+#pragma config WDTEN=OFF
+#pragma config PLLDIV=1
+#pragma config STVREN=ON
+#pragma config XINST=OFF
+#pragma config XINST=OFF
+#pragma config OSC=INTOSC
+#pragma config T1DIG=ON
+#pragma config LPT1OSC=OFF
+#pragma config FCMEN=OFF
+#pragma config IESO=OFF
+#pragma config WDTPS=32768
+#pragma config DSWDTOSC=INTOSCREF
+#pragma config RTCOSC=T1OSCREF
+#pragma config DSBOREN=OFF
+#pragma config DSWDTEN=OFF
+#pragma config DSWDTPS=G2
+#pragma config IOL1WAY=OFF
+#pragma config MSSP7B_EN=MSK7
+#pragma config WPCFG=OFF
+#pragma config WPDIS=OFF
+
 # 13 "main.c"
 void caratula(void)
 {
@@ -10000,18 +10029,19 @@ caratula();
 
 short count = 0;
 
-
+PORTCbits.RC7 = 1;
+PORTBbits.RB0 = 1;
 
 
 while(1){
 
 
 
-on_numbers(count);
-_delay_s(1000);
+write(count);
+
 count++;
 
-if ( count == 10) count = 0;
+if ( count == 100) count = 0;
 
 
 }

@@ -118,6 +118,8 @@ RTCCPTR_MASK_YEAR 3
 [v ___ftmul __ftmul `(f  1 e 3 0 ]
 "20 C:\Program Files\Microchip\xc8\v1.34\sources\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
 "15 C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "8 C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
@@ -136,16 +138,16 @@ RTCCPTR_MASK_YEAR 3
 [v _RtccWriteTime RtccWriteTime `(E7121  1 e 1 0 ]
 "21 C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
 [v _RtccWrOn RtccWrOn `(v  1 e 0 0 ]
-"13 C:\display-7-segm\display7seg.c
+"3 C:\display-7-segm\display7seg.c
 [v _on_number on_number `(v  1 e 0 0 ]
-"58
-[v _on_numbers on_numbers `(v  1 e 0 0 ]
+"48
+[v _clear_Segment clear_Segment `(v  1 e 0 0 ]
+"71
+[v _write write `(v  1 e 0 0 ]
 "13 C:\display-7-segm\main.c
 [v _caratula caratula `(v  1 e 0 0 ]
 "33
 [v _Setup Setup `(v  1 e 0 0 ]
-"68
-[v __delay_s _delay_s `(v  1 e 0 0 ]
 "78
 [v _main main `(i  1 e 2 0 ]
 "22 C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
@@ -218,7 +220,7 @@ RTCCPTR_MASK_YEAR 3
 [v _ANCON0 ANCON0 `VEuc  1 e 1 @3912 ]
 "2577
 [v _ANCON1 ANCON1 `VEuc  1 e 1 @3913 ]
-[s S748 . 1 `uc 1 RB0 1 0 :1:0 
+[s S412 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -228,7 +230,7 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 RB7 1 0 :1:7 
 ]
 "5591
-[s S757 . 1 `uc 1 AN12 1 0 :1:0 
+[s S421 . 1 `uc 1 AN12 1 0 :1:0 
 `uc 1 AN10 1 0 :1:1 
 `uc 1 AN8 1 0 :1:2 
 `uc 1 AN9 1 0 :1:3 
@@ -236,7 +238,7 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 KBI2 1 0 :1:6 
 `uc 1 KBI3 1 0 :1:7 
 ]
-[s S765 . 1 `uc 1 INT0 1 0 :1:0 
+[s S429 . 1 `uc 1 INT0 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 CTEDG1 1 0 :1:2 
 `uc 1 CTEDG2 1 0 :1:3 
@@ -245,7 +247,7 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 PGC 1 0 :1:6 
 `uc 1 PGD 1 0 :1:7 
 ]
-[s S774 . 1 `uc 1 RP3 1 0 :1:0 
+[s S438 . 1 `uc 1 RP3 1 0 :1:0 
 `uc 1 RTCC 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 SCK1 1 0 :1:4 
@@ -253,28 +255,28 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 RP9 1 0 :1:6 
 `uc 1 RP10 1 0 :1:7 
 ]
-[s S782 . 1 `uc 1 . 1 0 :1:0 
+[s S446 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RP4 1 0 :1:1 
 `uc 1 VMO 1 0 :1:2 
 `uc 1 VPO 1 0 :1:3 
 `uc 1 SCL1 1 0 :1:4 
 `uc 1 SDA1 1 0 :1:5 
 ]
-[s S789 . 1 `uc 1 . 1 0 :2:0 
+[s S453 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 REFO 1 0 :1:2 
 `uc 1 RP6 1 0 :1:3 
 `uc 1 RP7 1 0 :1:4 
 `uc 1 RP8 1 0 :1:5 
 ]
-[s S795 . 1 `uc 1 . 1 0 :2:0 
+[s S459 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 RP5 1 0 :1:2 
 ]
-[s S798 . 1 `uc 1 . 1 0 :3:0 
+[s S462 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 CCP2_PA2 1 0 :1:3 
 ]
-[u S801 . 1 `S748 1 . 1 0 `S757 1 . 1 0 `S765 1 . 1 0 `S774 1 . 1 0 `S782 1 . 1 0 `S789 1 . 1 0 `S795 1 . 1 0 `S798 1 . 1 0 ]
-[v _PORTBbits PORTBbits `VES801  1 e 1 @3969 ]
-[s S864 . 1 `uc 1 RC0 1 0 :1:0 
+[u S465 . 1 `S412 1 . 1 0 `S421 1 . 1 0 `S429 1 . 1 0 `S438 1 . 1 0 `S446 1 . 1 0 `S453 1 . 1 0 `S459 1 . 1 0 `S462 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES465  1 e 1 @3969 ]
+[s S291 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -284,17 +286,17 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 RC7 1 0 :1:7 
 ]
 "5857
-[s S873 . 1 `uc 1 T1OSO 1 0 :1:0 
+[s S300 . 1 `uc 1 T1OSO 1 0 :1:0 
 `uc 1 T1OSI 1 0 :1:1 
 `uc 1 AN11 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 D_MINUS 1 0 :1:4 
 `uc 1 D_PLUS 1 0 :1:5 
 ]
-[s S880 . 1 `uc 1 . 1 0 :1:0 
+[s S307 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_UOE 1 0 :1:1 
 ]
-[s S883 . 1 `uc 1 T1CK 1 0 :1:0 
+[s S310 . 1 `uc 1 T1CK 1 0 :1:0 
 `uc 1 nUOE 1 0 :1:1 
 `uc 1 CTPLS 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -303,34 +305,34 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 TX1 1 0 :1:6 
 `uc 1 RX1 1 0 :1:7 
 ]
-[s S892 . 1 `uc 1 RP11 1 0 :1:0 
+[s S319 . 1 `uc 1 RP11 1 0 :1:0 
 `uc 1 RP12 1 0 :1:1 
 `uc 1 RP13 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 CK1 1 0 :1:6 
 `uc 1 DT1 1 0 :1:7 
 ]
-[s S899 . 1 `uc 1 . 1 0 :6:0 
+[s S326 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RP17 1 0 :1:6 
 `uc 1 SDO1 1 0 :1:7 
 ]
-[s S903 . 1 `uc 1 . 1 0 :7:0 
+[s S330 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 RP18 1 0 :1:7 
 ]
-[s S906 . 1 `uc 1 . 1 0 :1:0 
+[s S333 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 CCP2 1 0 :1:1 
 ]
-[s S909 . 1 `uc 1 . 1 0 :2:0 
+[s S336 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 PA1 1 0 :1:2 
 ]
-[s S912 . 1 `uc 1 . 1 0 :1:0 
+[s S339 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 PA2 1 0 :1:1 
 ]
-[s S915 . 1 `uc 1 . 1 0 :3:0 
+[s S342 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 RC3 1 0 :1:3 
 ]
-[u S918 . 1 `S864 1 . 1 0 `S873 1 . 1 0 `S880 1 . 1 0 `S883 1 . 1 0 `S892 1 . 1 0 `S899 1 . 1 0 `S903 1 . 1 0 `S906 1 . 1 0 `S909 1 . 1 0 `S912 1 . 1 0 `S915 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES918  1 e 1 @3970 ]
+[u S345 . 1 `S291 1 . 1 0 `S300 1 . 1 0 `S307 1 . 1 0 `S310 1 . 1 0 `S319 1 . 1 0 `S326 1 . 1 0 `S330 1 . 1 0 `S333 1 . 1 0 `S336 1 . 1 0 `S339 1 . 1 0 `S342 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES345  1 e 1 @3970 ]
 [s S210 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
@@ -366,26 +368,26 @@ RTCCPTR_MASK_YEAR 3
 ]
 [u S242 . 1 `S210 1 . 1 0 `S219 1 . 1 0 `S221 1 . 1 0 `S224 1 . 1 0 `S227 1 . 1 0 `S230 1 . 1 0 `S233 1 . 1 0 `S236 1 . 1 0 `S239 1 . 1 0 ]
 [v _LATBbits LATBbits `VES242  1 e 1 @3978 ]
-[s S1376 . 1 `uc 1 ALRMPTR 1 0 :2:0 
+[s S1582 . 1 `uc 1 ALRMPTR 1 0 :2:0 
 `uc 1 AMASK 1 0 :4:2 
 `uc 1 CHIME 1 0 :1:6 
 `uc 1 ALRMEN 1 0 :1:7 
 ]
 "6740
-[s S1381 . 1 `uc 1 ALRMPTR0 1 0 :1:0 
+[s S1587 . 1 `uc 1 ALRMPTR0 1 0 :1:0 
 `uc 1 ALRMPTR1 1 0 :1:1 
 `uc 1 AMASK0 1 0 :1:2 
 `uc 1 AMASK1 1 0 :1:3 
 `uc 1 AMASK2 1 0 :1:4 
 `uc 1 AMASK3 1 0 :1:5 
 ]
-[u S1388 . 1 `S1376 1 . 1 0 `S1381 1 . 1 0 ]
-[v _ALRMCFGbits ALRMCFGbits `VES1388  1 e 1 @3985 ]
+[u S1594 . 1 `S1582 1 . 1 0 `S1587 1 . 1 0 ]
+[v _ALRMCFGbits ALRMCFGbits `VES1594  1 e 1 @3985 ]
 "6794
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "6850
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
-[s S484 . 1 `uc 1 TRISB0 1 0 :1:0 
+[s S736 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
 `uc 1 TRISB3 1 0 :1:3 
@@ -395,8 +397,8 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 TRISB7 1 0 :1:7 
 ]
 "6867
-[u S493 . 1 `S484 1 . 1 0 ]
-[v _TRISBbits TRISBbits `VES493  1 e 1 @3987 ]
+[u S745 . 1 `S736 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES745  1 e 1 @3987 ]
 "6911
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
 "7055
@@ -417,7 +419,7 @@ RTCCPTR_MASK_YEAR 3
 ]
 [u S66 . 1 `S55 1 . 1 0 `S59 1 . 1 0 ]
 [v _OSCTUNEbits OSCTUNEbits `VES66  1 e 1 @3995 ]
-[s S589 . 1 `uc 1 RTCCIE 1 0 :1:0 
+[s S841 . 1 `uc 1 RTCCIE 1 0 :1:0 
 `uc 1 TMR3GIE 1 0 :1:1 
 `uc 1 CTMUIE 1 0 :1:2 
 `uc 1 TMR4IE 1 0 :1:3 
@@ -427,28 +429,28 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 SSP2IE 1 0 :1:7 
 ]
 "7958
-[s S598 . 1 `uc 1 RXB0IE 1 0 :1:0 
+[s S850 . 1 `uc 1 RXB0IE 1 0 :1:0 
 ]
-[s S600 . 1 `uc 1 . 1 0 :1:0 
+[s S852 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RXB1IE 1 0 :1:1 
 ]
-[s S603 . 1 `uc 1 . 1 0 :1:0 
+[s S855 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RXBNIE 1 0 :1:1 
 ]
-[s S606 . 1 `uc 1 . 1 0 :2:0 
+[s S858 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TXB0IE 1 0 :1:2 
 ]
-[s S609 . 1 `uc 1 . 1 0 :3:0 
+[s S861 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 TXB1IE 1 0 :1:3 
 ]
-[s S612 . 1 `uc 1 . 1 0 :4:0 
+[s S864 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TXB2IE 1 0 :1:4 
 ]
-[s S615 . 1 `uc 1 . 1 0 :4:0 
+[s S867 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TXBNIE 1 0 :1:4 
 ]
-[u S618 . 1 `S589 1 . 1 0 `S598 1 . 1 0 `S600 1 . 1 0 `S603 1 . 1 0 `S606 1 . 1 0 `S609 1 . 1 0 `S612 1 . 1 0 `S615 1 . 1 0 ]
-[v _PIE3bits PIE3bits `VES618  1 e 1 @4003 ]
+[u S870 . 1 `S841 1 . 1 0 `S850 1 . 1 0 `S852 1 . 1 0 `S855 1 . 1 0 `S858 1 . 1 0 `S861 1 . 1 0 `S864 1 . 1 0 `S867 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES870  1 e 1 @4003 ]
 "8239
 [v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
 "10682
@@ -502,7 +504,7 @@ RTCCPTR_MASK_YEAR 3
 ]
 [u S94 . 1 `S81 1 . 1 0 `S87 1 . 1 0 ]
 [v _OSCCONbits OSCCONbits `VES94  1 e 1 @4051 ]
-[s S1183 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S1389 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -512,7 +514,7 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "14949
-[s S1192 . 1 `uc 1 . 1 0 :1:0 
+[s S1398 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -521,46 +523,57 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S1201 . 1 `uc 1 . 1 0 :6:0 
+[s S1407 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S1218 . 1 `S1183 1 . 1 0 `S1192 1 . 1 0 `S1201 1 . 1 0 `S1192 1 . 1 0 `S1201 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES1218  1 e 1 @4082 ]
+[u S1424 . 1 `S1389 1 . 1 0 `S1398 1 . 1 0 `S1407 1 . 1 0 `S1398 1 . 1 0 `S1407 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES1424  1 e 1 @4082 ]
 "78 C:\display-7-segm\main.c
 [v _main main `(i  1 e 2 0 ]
 {
 "82
-[v main@count count `s  1 a 2 15 ]
-"101
+[v main@count count `s  1 a 2 17 ]
+"102
 } 0
-"58 C:\display-7-segm\display7seg.c
-[v _on_numbers on_numbers `(v  1 e 0 0 ]
+"71 C:\display-7-segm\display7seg.c
+[v _write write `(v  1 e 0 0 ]
 {
-[v on_numbers@uni uni `s  1 p 2 4 ]
-"62
+"72
+[v write@time time `i  1 a 2 15 ]
+"73
+[v write@dec dec `s  1 a 2 13 ]
+"74
+[v write@uni uni `s  1 a 2 11 ]
+"71
+[v write@number number `s  1 p 2 8 ]
+"92
 } 0
-"13
+"3
 [v _on_number on_number `(v  1 e 0 0 ]
 {
 [v on_number@number number `s  1 p 2 0 ]
+"46
+} 0
+"48
+[v _clear_Segment clear_Segment `(v  1 e 0 0 ]
+{
 "56
+} 0
+"15 C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
 } 0
 "13 C:\display-7-segm\main.c
 [v _caratula caratula `(v  1 e 0 0 ]
 {
 "25
-} 0
-"68
-[v __delay_s _delay_s `(v  1 e 0 0 ]
-{
-"70
-[v __delay_s@index index `s  1 a 2 13 ]
-"69
-[v __delay_s@it it `s  1 a 2 11 ]
-"68
-[v __delay_s@millis millis `i  1 p 2 8 ]
-"75
 } 0
 "33
 [v _Setup Setup `(v  1 e 0 0 ]
@@ -630,9 +643,9 @@ RTCCPTR_MASK_YEAR 3
 "34 C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
 [v _RtccWriteTime RtccWriteTime `(E7121  1 e 1 0 ]
 {
-[s S1296 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S1502 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
 "36
-[s S1299 . 2 `uc 1 b0 1 0 :1:0 
+[s S1505 . 2 `uc 1 b0 1 0 :1:0 
 `uc 1 b1 1 0 :1:1 
 `uc 1 b2 1 0 :1:2 
 `uc 1 b3 1 0 :1:3 
@@ -649,10 +662,10 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 b14 1 1 :1:6 
 `uc 1 b15 1 1 :1:7 
 ]
-[u S1316 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1296 1 byte 2 0 `S1299 1 bits 2 0 ]
-[v RtccWriteTime@tempHourWDay tempHourWDay `S1316  1 a 2 9 ]
+[u S1522 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1502 1 byte 2 0 `S1505 1 bits 2 0 ]
+[v RtccWriteTime@tempHourWDay tempHourWDay `S1522  1 a 2 9 ]
 "37
-[v RtccWriteTime@tempMinSec tempMinSec `S1316  1 a 2 7 ]
+[v RtccWriteTime@tempMinSec tempMinSec `S1522  1 a 2 7 ]
 "40
 [v RtccWriteTime@wasWrEn wasWrEn `E7121  1 a 1 6 ]
 "42
@@ -669,9 +682,9 @@ RTCCPTR_MASK_YEAR 3
 "35 C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
 [v _RtccWriteDate RtccWriteDate `(E7121  1 e 1 0 ]
 {
-[s S1296 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S1502 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
 "37
-[s S1299 . 2 `uc 1 b0 1 0 :1:0 
+[s S1505 . 2 `uc 1 b0 1 0 :1:0 
 `uc 1 b1 1 0 :1:1 
 `uc 1 b2 1 0 :1:2 
 `uc 1 b3 1 0 :1:3 
@@ -688,12 +701,12 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 b14 1 1 :1:6 
 `uc 1 b15 1 1 :1:7 
 ]
-[u S1316 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1296 1 byte 2 0 `S1299 1 bits 2 0 ]
-[v RtccWriteDate@tempHourWDay tempHourWDay `S1316  1 a 2 11 ]
+[u S1522 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1502 1 byte 2 0 `S1505 1 bits 2 0 ]
+[v RtccWriteDate@tempHourWDay tempHourWDay `S1522  1 a 2 11 ]
 "38
-[v RtccWriteDate@tempDayMonth tempDayMonth `S1316  1 a 2 9 ]
+[v RtccWriteDate@tempDayMonth tempDayMonth `S1522  1 a 2 9 ]
 "39
-[v RtccWriteDate@tempYear tempYear `S1316  1 a 2 6 ]
+[v RtccWriteDate@tempYear tempYear `S1522  1 a 2 6 ]
 "41
 [v RtccWriteDate@wasWrEn wasWrEn `E7121  1 a 1 8 ]
 "43

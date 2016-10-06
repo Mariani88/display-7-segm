@@ -122,8 +122,75 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v __delay `JF8145 ~T0 @X0 0 e ]
 [p i __delay ]
 [p mainexit ]
-"8 display7seg.h
-[v _on_numbers `(v ~T0 @X0 0 ef1`s ]
+"5791 C:\Program Files\Microchip\xc8\v1.34\include\pic18f26j50.h
+[s S416 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S416 . RC0 RC1 RC2 . RC4 RC5 RC6 RC7 ]
+"5801
+[s S417 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S417 . T1OSO T1OSI AN11 . D_MINUS D_PLUS ]
+"5809
+[s S418 :1 `uc 1 :1 `uc 1 ]
+[n S418 . . NOT_UOE ]
+"5813
+[s S419 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S419 . T1CK nUOE CTPLS . VM VP TX1 RX1 ]
+"5823
+[s S420 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S420 . RP11 RP12 RP13 . CK1 DT1 ]
+"5831
+[s S421 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S421 . . RP17 SDO1 ]
+"5836
+[s S422 :7 `uc 1 :1 `uc 1 ]
+[n S422 . . RP18 ]
+"5840
+[s S423 :1 `uc 1 :1 `uc 1 ]
+[n S423 . . CCP2 ]
+"5844
+[s S424 :2 `uc 1 :1 `uc 1 ]
+[n S424 . . PA1 ]
+"5848
+[s S425 :1 `uc 1 :1 `uc 1 ]
+[n S425 . . PA2 ]
+"5852
+[s S426 :3 `uc 1 :1 `uc 1 ]
+[n S426 . . RC3 ]
+"5790
+[u S415 `S416 1 `S417 1 `S418 1 `S419 1 `S420 1 `S421 1 `S422 1 `S423 1 `S424 1 `S425 1 `S426 1 ]
+[n S415 . . . . . . . . . . . . ]
+"5857
+[v _PORTCbits `VS415 ~T0 @X0 0 e@3970 ]
+"5529
+[s S407 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S407 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"5539
+[s S408 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S408 . AN12 AN10 AN8 AN9 . KBI2 KBI3 ]
+"5548
+[s S409 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S409 . INT0 . CTEDG1 CTEDG2 KBI0 KBI1 PGC PGD ]
+"5558
+[s S410 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S410 . RP3 RTCC . SCK1 SDI1 RP9 RP10 ]
+"5567
+[s S411 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S411 . . RP4 VMO VPO SCL1 SDA1 ]
+"5575
+[s S412 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S412 . . REFO RP6 RP7 RP8 ]
+"5582
+[s S413 :2 `uc 1 :1 `uc 1 ]
+[n S413 . . RP5 ]
+"5586
+[s S414 :3 `uc 1 :1 `uc 1 ]
+[n S414 . . CCP2_PA2 ]
+"5528
+[u S406 `S407 1 `S408 1 `S409 1 `S410 1 `S411 1 `S412 1 `S413 1 `S414 1 ]
+[n S406 . . . . . . . . . ]
+"5591
+[v _PORTBbits `VS406 ~T0 @X0 0 e@3969 ]
+"16 display7seg.h
+[v _write `(v ~T0 @X0 0 ef1`s ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f26j50.h: 49: extern volatile unsigned char RPOR0 @ 0xEC6;
@@ -7671,8 +7738,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;headers\unmc_lcd_216.h: 107: void lcd_setcursor_vb(int8 visible, int8 blink);
 [; ;headers\unmc_lcd_216.h: 108: void lcd_puts(char *ptr);
 [; ;headers\unmc_lcd_216.h: 109: void lcd_putrs(const char *ptr);
-[; ;display7seg.h: 7: void clear_Segment();
-[; ;display7seg.h: 8: void on_numbers(short uni);
+[; ;stdbool.h: 12: typedef unsigned char bool;
 [; ;stdarg.h: 7: typedef void * va_list[1];
 [; ;stdarg.h: 10: extern void * __va_start(void);
 [; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
@@ -7703,17 +7769,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdio.h: 202: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
 [; ;stdio.h: 206: extern int sprintf(char *, const char *, ...);
 [; ;stdio.h: 207: extern int printf(const char *, ...);
-[; ;headers\unmc_lcd_216.h: 98: void lcd_send_nibble(int8 nibble);
-[; ;headers\unmc_lcd_216.h: 99: int8 lcd_read_nibble(void);
-[; ;headers\unmc_lcd_216.h: 100: int8 lcd_read_byte(void);
-[; ;headers\unmc_lcd_216.h: 101: void lcd_send_byte(int8 address, int8 n);
-[; ;headers\unmc_lcd_216.h: 103: void lcd_init(void);
-[; ;headers\unmc_lcd_216.h: 104: void lcd_gotoxy(int8 x, int8 y);
-[; ;headers\unmc_lcd_216.h: 105: void lcd_putc(int8 c);
-[; ;headers\unmc_lcd_216.h: 106: void lcd_comand(int8 d);
-[; ;headers\unmc_lcd_216.h: 107: void lcd_setcursor_vb(int8 visible, int8 blink);
-[; ;headers\unmc_lcd_216.h: 108: void lcd_puts(char *ptr);
-[; ;headers\unmc_lcd_216.h: 109: void lcd_putrs(const char *ptr);
 "15 C:/Archivos de programa/Unimic/unmc_01/headers\unmc_config_01.h
 [p x CPUDIV=OSC1 ]
 "16
@@ -7900,6 +7955,20 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;headers\unmc_rtcc_01.h: 63: void DelayPORXLCD(void);
 [; ;headers\unmc_rtcc_01.h: 75: void Write_RTC(void);
 [; ;headers\unmc_rtcc_01.h: 112: void Read_RTC(void);
+[; ;display7seg.h: 14: void clear_Segment();
+[; ;display7seg.h: 15: void on_numbers(short number, bool uni);
+[; ;display7seg.h: 16: void write(short number);
+[; ;headers\unmc_lcd_216.h: 98: void lcd_send_nibble(int8 nibble);
+[; ;headers\unmc_lcd_216.h: 99: int8 lcd_read_nibble(void);
+[; ;headers\unmc_lcd_216.h: 100: int8 lcd_read_byte(void);
+[; ;headers\unmc_lcd_216.h: 101: void lcd_send_byte(int8 address, int8 n);
+[; ;headers\unmc_lcd_216.h: 103: void lcd_init(void);
+[; ;headers\unmc_lcd_216.h: 104: void lcd_gotoxy(int8 x, int8 y);
+[; ;headers\unmc_lcd_216.h: 105: void lcd_putc(int8 c);
+[; ;headers\unmc_lcd_216.h: 106: void lcd_comand(int8 d);
+[; ;headers\unmc_lcd_216.h: 107: void lcd_setcursor_vb(int8 visible, int8 blink);
+[; ;headers\unmc_lcd_216.h: 108: void lcd_puts(char *ptr);
+[; ;headers\unmc_lcd_216.h: 109: void lcd_putrs(const char *ptr);
 "13 main.c
 [v _caratula `(v ~T0 @X0 1 ef ]
 "14
@@ -8039,36 +8108,39 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _count `s ~T0 @X0 1 a ]
 [; ;main.c: 82: short count = 0;
 [e = _count -> -> 0 `i `s ]
-[; ;main.c: 87: while(1){
-"87
+[; ;main.c: 84: PORTCbits.RC7 = 1;
+"84
+[e = . . _PORTCbits 0 7 -> -> 1 `i `uc ]
+[; ;main.c: 85: PORTBbits.RB0 = 1;
+"85
+[e = . . _PORTBbits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 88: while(1){
+"88
 [e :U 1044 ]
 {
-[; ;main.c: 91: on_numbers(count);
-"91
-[e ( _on_numbers (1 _count ]
-[; ;main.c: 92: _delay_s(1000);
+[; ;main.c: 92: write(count);
 "92
-[e ( __delay_s (1 -> 1000 `i ]
-[; ;main.c: 93: count++;
-"93
+[e ( _write (1 _count ]
+[; ;main.c: 94: count++;
+"94
 [e ++ _count -> -> 1 `i `s ]
-[; ;main.c: 95: if ( count == 10) count = 0;
-"95
-[e $ ! == -> _count `i -> 10 `i 1046  ]
+[; ;main.c: 96: if ( count == 100) count = 0;
+"96
+[e $ ! == -> _count `i -> 100 `i 1046  ]
 [e = _count -> -> 0 `i `s ]
 [e :U 1046 ]
-"98
+"99
 }
 [e :U 1043 ]
-"87
+"88
 [e $U 1044  ]
 [e :U 1045 ]
-[; ;main.c: 98: }
-[; ;main.c: 100: return 0;
-"100
+[; ;main.c: 99: }
+[; ;main.c: 101: return 0;
+"101
 [e ) -> 0 `i ]
 [e $UE 1042  ]
-[; ;main.c: 101: }
-"101
+[; ;main.c: 102: }
+"102
 [e :UE 1042 ]
 }

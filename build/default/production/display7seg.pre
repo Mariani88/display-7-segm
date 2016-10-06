@@ -9790,21 +9790,152 @@ void lcd_setcursor_vb(int8 visible, int8 blink);
 void lcd_puts(char *ptr);
 void lcd_putrs(const char *ptr);
 
-# 7 "display7seg.h"
+# 12 "C:\Program Files\Microchip\xc8\v1.34\include\stdbool.h"
+typedef unsigned char bool;
+
+# 7 "C:\Program Files\Microchip\xc8\v1.34\include\stdarg.h"
+typedef void * va_list[1];
+
+#pragma intrinsic(__va_start)
+extern void * __va_start(void);
+
+#pragma intrinsic(__va_arg)
+extern void * __va_arg(void *, ...);
+
+# 24 "C:\Program Files\Microchip\xc8\v1.34\include\stdio.h"
+extern int errno;
+
+# 55
+struct __prbuf
+{
+char * ptr;
+void (* func)(char);
+};
+
+# 17 "C:\Program Files\Microchip\xc8\v1.34\include\conio.h"
+extern int errno;
+
+
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+# 31
+extern char * cgets(char *);
+extern void cputs(const char *);
+
+# 100 "C:\Program Files\Microchip\xc8\v1.34\include\stdio.h"
+extern int cprintf(char *, ...);
+#pragma printf_check(cprintf)
+
+
+
+extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+
+
+# 192
+#pragma printf_check(vprintf) const
+#pragma printf_check(vsprintf) const
+
+extern char * gets(char *);
+extern int puts(const char *);
+extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+
+#pragma printf_check(printf) const
+#pragma printf_check(sprintf) const
+extern int sprintf(char *, const char *, ...);
+extern int printf(const char *, ...);
+
+
+# 15 "C:/Archivos de programa/Unimic/unmc_01/headers\unmc_config_01.h"
+#pragma config CPUDIV=OSC1
+#pragma config CP0=OFF
+#pragma config WDTEN=OFF
+#pragma config PLLDIV=1
+#pragma config STVREN=ON
+#pragma config XINST=OFF
+#pragma config XINST=OFF
+#pragma config OSC=INTOSC
+#pragma config T1DIG=ON
+#pragma config LPT1OSC=OFF
+#pragma config FCMEN=OFF
+#pragma config IESO=OFF
+#pragma config WDTPS=32768
+#pragma config DSWDTOSC=INTOSCREF
+#pragma config RTCOSC=T1OSCREF
+#pragma config DSBOREN=OFF
+#pragma config DSWDTEN=OFF
+#pragma config DSWDTPS=G2
+#pragma config IOL1WAY=OFF
+#pragma config MSSP7B_EN=MSK7
+#pragma config WPCFG=OFF
+#pragma config WPDIS=OFF
+
+# 17 "C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h"
+rtccTimeDate RtccTimeDate ,RtccAlrmTimeDate, Rtcc_read_TimeDate ;
+
+char segundo_u;
+char segundo_d;
+char minuto_u;
+char minuto_d;
+char hora_u;
+char hora_d;
+char fecha_u;
+char fecha_d;
+char mes_u;
+char mes_d;
+char dia_semana;
+char anio_u;
+char anio_d;
+bit flag=0;
+int i=0;
+int j=0;
+int a=0;
+int b=0;
+int c=0;
+int k=0;
+int anio=15;
+int mes=9;
+int diasem=3;
+int dia=8;
+int hora=18;
+int minuto=30;
+int segundo=0;
+
+# 51
+rtccTime RtccTime;
+rtccTime RtccTimeVal;
+rtccDate RtccDate;
+
+unsigned char buffer2[20];
+
+void DelayFor18TCY(void);
+
+# 63
+void DelayPORXLCD(void);
+
+# 75
+void Write_RTC(void);
+
+# 112
+void Read_RTC(void);
+
+# 14 "display7seg.h"
 void clear_Segment();
-void on_numbers(short uni);
+void on_numbers(short number, bool uni);
+void write(short number);
 
 # 3 "display7seg.c"
-void clear_Segment(){
-PORTBbits.RB7 = 0;
-PORTBbits.RB6 = 0;
-PORTBbits.RB5 = 0;
-PORTBbits.RB4 = 0;
-PORTBbits.RB3 = 0;
-PORTBbits.RB2 = 0;
-PORTBbits.RB1 = 0;
-}
-
 void on_number(short number){
 
 switch (number){
@@ -9850,8 +9981,48 @@ break;
 }
 }
 
-void on_numbers(short uni){
+void clear_Segment(){
+PORTBbits.RB7 = 0;
+PORTBbits.RB6 = 0;
+PORTBbits.RB5 = 0;
+PORTBbits.RB4 = 0;
+PORTBbits.RB3 = 0;
+PORTBbits.RB2 = 0;
+PORTBbits.RB1 = 0;
+}
+
+void on_numbers(short number, bool uni){
+
+if(uni){
 PORTCbits.RC7 = 0;
 PORTBbits.RB0 = 1;
+}else{
+PORTCbits.RC7 = 1;
+PORTBbits.RB0 = 0;
+}
+
+on_number(number);
+}
+
+void write(short number){
+int time = 0;
+short dec = number/10;
+short uni = number - dec*10;
+clear_Segment();
+while(time < 500){
+
+
+
 on_number(uni);
+PORTCbits.RC7 = 0;
+PORTBbits.RB0 = 1;
+_delay((unsigned long)((10)*(8000000/4000.0)));
+PORTCbits.RC7 = 1;
+on_number(dec);
+PORTBbits.RB0 = 0;
+_delay((unsigned long)((10)*(8000000/4000.0)));
+PORTBbits.RB0 = 1;
+
+time = time + 20;
+}
 }
