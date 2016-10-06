@@ -122,7 +122,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v __delay `JF8145 ~T0 @X0 0 e ]
 [p i __delay ]
 [p mainexit ]
-"12 display7seg.h
+"8 display7seg.h
 [v _on_numbers `(v ~T0 @X0 0 ef1`s ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -7671,8 +7671,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;headers\unmc_lcd_216.h: 107: void lcd_setcursor_vb(int8 visible, int8 blink);
 [; ;headers\unmc_lcd_216.h: 108: void lcd_puts(char *ptr);
 [; ;headers\unmc_lcd_216.h: 109: void lcd_putrs(const char *ptr);
-[; ;display7seg.h: 11: void clear_Segment();
-[; ;display7seg.h: 12: void on_numbers(short uni);
+[; ;display7seg.h: 7: void clear_Segment();
+[; ;display7seg.h: 8: void on_numbers(short uni);
 [; ;stdarg.h: 7: typedef void * va_list[1];
 [; ;stdarg.h: 10: extern void * __va_start(void);
 [; ;stdarg.h: 13: extern void * __va_arg(void *, ...);

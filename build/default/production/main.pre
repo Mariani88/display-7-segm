@@ -9790,7 +9790,7 @@ void lcd_setcursor_vb(int8 visible, int8 blink);
 void lcd_puts(char *ptr);
 void lcd_putrs(const char *ptr);
 
-# 11 "display7seg.h"
+# 7 "display7seg.h"
 void clear_Segment();
 void on_numbers(short uni);
 

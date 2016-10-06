@@ -9790,7 +9790,7 @@ void lcd_setcursor_vb(int8 visible, int8 blink);
 void lcd_puts(char *ptr);
 void lcd_putrs(const char *ptr);
 
-# 11 "display7seg.h"
+# 7 "display7seg.h"
 void clear_Segment();
 void on_numbers(short uni);
 
@@ -9845,7 +9845,7 @@ PORTBbits.RB7 = 1; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.RB4 = 1; PORT
 break;
 
 case 9:
-PORTBbits.RB7 = 1; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.RB4 = 1; PORTBbits.RB3 = 0; PORTBbits.RB2 = 1; PORTBbits.RB1 = 0;
+PORTBbits.RB7 = 1; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.RB4 = 1; PORTBbits.RB3 = 0; PORTBbits.RB2 = 1; PORTBbits.RB1 = 1;
 break;
 }
 }

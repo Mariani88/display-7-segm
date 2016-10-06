@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC18 LITE Macro Assembler V1.34 build -361300703 
-                                                                                               Thu Oct 06 16:14:10 2016
+                                                                                               Thu Oct 06 16:21:51 2016
 
 Microchip Technology Omniscient Code Generator (Lite mode) build 201502162209
      1                           	processor	18F26J50
@@ -774,14 +774,14 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 201502162209
    744  001332                     l297:
    745                           
    746                           ;display7seg.c: 53: PORTBbits.RB7 = 1; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.R
-      +                          B4 = 1; PORTBbits.RB3 = 0; PORTBbits.RB2 = 1; PORTBbits.RB1 = 0;
+      +                          B4 = 1; PORTBbits.RB3 = 0; PORTBbits.RB2 = 1; PORTBbits.RB1 = 1;
    747  001332  8E81               	bsf	3969,7,c	;volatile
    748  001334  8C81               	bsf	3969,6,c	;volatile
    749  001336  8A81               	bsf	3969,5,c	;volatile
    750  001338  8881               	bsf	3969,4,c	;volatile
    751  00133A  9681               	bcf	3969,3,c	;volatile
    752  00133C  8481               	bsf	3969,2,c	;volatile
-   753  00133E  9281               	bcf	3969,1,c	;volatile
+   753  00133E  8281               	bsf	3969,1,c	;volatile
    754                           
    755                           ;display7seg.c: 55: }
    756                           
@@ -2920,7 +2920,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V1.34 build -361300703 
-Symbol Table                                                                                   Thu Oct 06 16:14:10 2016
+Symbol Table                                                                                   Thu Oct 06 16:21:51 2016
 
                         _a 001D                          _b 001F                          _c 0021  
                         _i 0023                          _j 0025                          _k 0027  

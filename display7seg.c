@@ -50,7 +50,7 @@ void on_number(short number){
         break;
         
         case 9: 
-        A_ON; B_ON; C_ON; D_ON; E_OFF; F_ON; G_OFF;
+        A_ON; B_ON; C_ON; D_ON; E_OFF; F_ON; G_ON;
         break;
     }
 }    

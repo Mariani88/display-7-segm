@@ -7613,8 +7613,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;headers\unmc_lcd_216.h: 107: void lcd_setcursor_vb(int8 visible, int8 blink);
 [; ;headers\unmc_lcd_216.h: 108: void lcd_puts(char *ptr);
 [; ;headers\unmc_lcd_216.h: 109: void lcd_putrs(const char *ptr);
-[; ;display7seg.h: 11: void clear_Segment();
-[; ;display7seg.h: 12: void on_numbers(short uni);
+[; ;display7seg.h: 7: void clear_Segment();
+[; ;display7seg.h: 8: void on_numbers(short uni);
 "3 display7seg.c
 [v _clear_Segment `(v ~T0 @X0 1 ef ]
 {
@@ -7795,7 +7795,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;display7seg.c: 52: case 9:
 "52
 [e :U 1047 ]
-[; ;display7seg.c: 53: PORTBbits.RB7 = 1; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.RB4 = 1; PORTBbits.RB3 = 0; PORTBbits.RB2 = 1; PORTBbits.RB1 = 0;
+[; ;display7seg.c: 53: PORTBbits.RB7 = 1; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.RB4 = 1; PORTBbits.RB3 = 0; PORTBbits.RB2 = 1; PORTBbits.RB1 = 1;
 "53
 [e = . . _PORTBbits 0 7 -> -> 1 `i `uc ]
 [e = . . _PORTBbits 0 6 -> -> 1 `i `uc ]
@@ -7803,7 +7803,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = . . _PORTBbits 0 4 -> -> 1 `i `uc ]
 [e = . . _PORTBbits 0 3 -> -> 0 `i `uc ]
 [e = . . _PORTBbits 0 2 -> -> 1 `i `uc ]
-[e = . . _PORTBbits 0 1 -> -> 0 `i `uc ]
+[e = . . _PORTBbits 0 1 -> -> 1 `i `uc ]
 [; ;display7seg.c: 54: break;
 "54
 [e $U 1036  ]
