@@ -9993,6 +9993,8 @@ PORTBbits.RB1 = 0;
 
 void on_numbers(short number, bool uni){
 
+on_number(number);
+
 if(uni){
 PORTCbits.RC7 = 0;
 PORTBbits.RB0 = 1;
@@ -10001,7 +10003,7 @@ PORTCbits.RC7 = 1;
 PORTBbits.RB0 = 0;
 }
 
-on_number(number);
+
 }
 
 void write(short number){
@@ -10011,14 +10013,15 @@ short uni = number - dec*10;
 clear_Segment();
 while(time < 500){
 
+on_numbers(uni, 1);
 
 
-on_number(uni);
-PORTCbits.RC7 = 0;
-PORTBbits.RB0 = 1;
+
+
 _delay((unsigned long)((10)*(8000000/4000.0)));
 PORTCbits.RC7 = 1;
-on_number(dec);
+on_numbers(dec, 0);
+
 PORTBbits.RB0 = 0;
 _delay((unsigned long)((10)*(8000000/4000.0)));
 PORTBbits.RB0 = 1;

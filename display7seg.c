@@ -57,6 +57,8 @@ void clear_Segment(){
 
 void on_numbers(short number, bool uni){
     
+    on_number(number);
+    
     if(uni){
         UNI_ON;
         DEC_OFF;
@@ -65,7 +67,7 @@ void on_numbers(short number, bool uni){
         DEC_ON;
     }
     
-    on_number(number);
+   
 }
 
 void write(short number){
@@ -75,14 +77,15 @@ void write(short number){
     clear_Segment();
     while(time < 500){
         
-        //on_numbers(uni, 1);
+        on_numbers(uni, 1);
         
-        on_number(uni);
-        UNI_ON;
-        DEC_OFF;
+        //on_number(uni);
+        //UNI_ON;
+        //DEC_OFF;
         __delay_ms(10);
         UNI_OFF;
-        on_number(dec);
+        on_numbers(dec, 0);
+        //on_number(dec);
         DEC_ON;
         __delay_ms(10);
         DEC_OFF;

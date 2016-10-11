@@ -12,33 +12,34 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $dist/default/production\display-7-segm.production.obj
-cinit CODE 0 15D4 15D4 44 1
-text0 CODE 0 1658 1658 3E 1
-text1 CODE 0 1394 1394 B4 1
-text2 CODE 0 12A0 12A0 F4 1
-text3 CODE 0 1726 1726 10 1
-text4 CODE 0 16C8 16C8 28 1
-text5 CODE 0 1742 1742 2 1
-text6 CODE 0 1618 1618 40 1
-text7 CODE 0 14DE 14DE 80 1
-text8 CODE 0 1696 1696 32 1
-text9 CODE 0 155E 155E 76 1
+cinit CODE 0 15D8 15D8 44 1
+text0 CODE 0 165C 165C 3E 1
+text1 CODE 0 1394 1394 B8 1
+text2 CODE 0 16F4 16F4 20 1
+text3 CODE 0 12A0 12A0 F4 1
+text4 CODE 0 174A 174A 10 1
+text5 CODE 0 16CC 16CC 28 1
+text6 CODE 0 1766 1766 2 1
+text7 CODE 0 161C 161C 40 1
+text8 CODE 0 14E2 14E2 80 1
+text9 CODE 0 169A 169A 32 1
 nvCOMRAM COMRAM 1 46 46 D 1
-text10 CODE 0 16F0 16F0 12 1
-text11 CODE 0 1702 1702 12 1
-text12 CODE 0 F06 F06 148 1
-text13 CODE 0 1448 1448 96 1
-text14 CODE 0 1194 1194 10C 1
-text15 CODE 0 104E 104E 146 1
-text16 CODE 0 1714 1714 12 1
-idataCOMRAM CODE 0 1736 1736 C 1
+text10 CODE 0 1562 1562 76 1
+text11 CODE 0 1714 1714 12 1
+text12 CODE 0 1726 1726 12 1
+text13 CODE 0 F06 F06 148 1
+text14 CODE 0 144C 144C 96 1
+text15 CODE 0 1194 1194 10C 1
+text16 CODE 0 104E 104E 146 1
+text17 CODE 0 1738 1738 12 1
+idataCOMRAM CODE 0 175A 175A C 1
 cstackCOMRAM COMRAM 1 33 33 13 1
 bitbssCOMRAM COMRAM 1 2F8 5F 1 1
 bssBANK0 BANK0 1 60 60 14 1
 smallconst SMALLCONST 0 F00 F00 6 1
 dataCOMRAM COMRAM 1 53 53 C 1
 bssCOMRAM COMRAM 1 1 1 32 1
-$C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
+$C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
 end_init CODE 0 0 0 4 1
 config CONFIG 0 FFF8 FFF8 8 1
 # %UNUSED Section
@@ -60,18 +61,18 @@ BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
 CONST 4-EFF 1
-CONST 1744-FFF7 1
+CONST 1768-FFF7 1
 STACK 74-EBF 1
-SMALLCONST 1744-FFF7 1
+SMALLCONST 1768-FFF7 1
 CODE 4-EFF 1
-CODE 1744-FFF7 1
+CODE 1768-FFF7 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK13 D00-DFF 1
 BANK14 E00-EBF 1
 BIGRAM 74-EBF 1
-MEDIUMCONST 1744-FFF7 1
+MEDIUMCONST 1768-FFF7 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -86,334 +87,341 @@ MEDIUMCONST 1744-FFF7 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\display-7-segm.production.obj
-F06 text12 CODE >22:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-F06 text12 CODE >24:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-F0A text12 CODE >26:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-F0C text12 CODE >27:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-F24 text12 CODE >28:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-F30 text12 CODE >29:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-F3A text12 CODE >30:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-F52 text12 CODE >31:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-F5E text12 CODE >32:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-F68 text12 CODE >33:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-F80 text12 CODE >34:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-F8C text12 CODE >35:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-F96 text12 CODE >36:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-FAE text12 CODE >37:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-FBA text12 CODE >38:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-FC4 text12 CODE >39:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-FDC text12 CODE >40:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-FE8 text12 CODE >41:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-FF2 text12 CODE >42:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-100A text12 CODE >43:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-1016 text12 CODE >44:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-1020 text12 CODE >45:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-1024 text12 CODE >46:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-1028 text12 CODE >47:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-1038 text12 CODE >48:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-1048 text12 CODE >49:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-104C text12 CODE >50:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
-104E text15 CODE >35:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-104E text15 CODE >43:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1052 text15 CODE >46:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-10AE text15 CODE >48:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-10B0 text15 CODE >51:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-10C0 text15 CODE >52:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-10D0 text15 CODE >53:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-10E0 text15 CODE >55:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-10E6 text15 CODE >58:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-10EA text15 CODE >61:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-10F8 text15 CODE >63:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-10FE text15 CODE >65:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-110C text15 CODE >67:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1114 text15 CODE >68:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-111A text15 CODE >71:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1120 text15 CODE >72:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1124 text15 CODE >74:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1128 text15 CODE >75:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-112C text15 CODE >76:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1138 text15 CODE >78:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-113E text15 CODE >79:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1144 text15 CODE >82:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1148 text15 CODE >83:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-114C text15 CODE >84:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1150 text15 CODE >85:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1154 text15 CODE >86:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1158 text15 CODE >87:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-115C text15 CODE >89:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1162 text15 CODE >91:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1166 text15 CODE >92:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-116C text15 CODE >94:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1170 text15 CODE >97:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1176 text15 CODE >99:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-117A text15 CODE >101:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-117C text15 CODE >104:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1182 text15 CODE >106:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1186 text15 CODE >107:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1188 text15 CODE >110:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-118E text15 CODE >113:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1192 text15 CODE >118:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-1194 text14 CODE >34:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1194 text14 CODE >42:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1198 text14 CODE >44:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-11D0 text14 CODE >46:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-11D2 text14 CODE >49:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-11E2 text14 CODE >50:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-11F2 text14 CODE >52:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-11F8 text14 CODE >55:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-11FC text14 CODE >58:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-120A text14 CODE >60:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1210 text14 CODE >62:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-121E text14 CODE >64:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1226 text14 CODE >65:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-122C text14 CODE >68:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1232 text14 CODE >69:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1236 text14 CODE >71:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-123A text14 CODE >72:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-123E text14 CODE >73:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-124E text14 CODE >76:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1254 text14 CODE >77:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1258 text14 CODE >79:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-125C text14 CODE >80:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1260 text14 CODE >81:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1264 text14 CODE >82:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1268 text14 CODE >84:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-126E text14 CODE >86:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1272 text14 CODE >87:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1278 text14 CODE >89:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-127C text14 CODE >92:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1282 text14 CODE >94:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1286 text14 CODE >96:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1288 text14 CODE >99:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-128E text14 CODE >101:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1292 text14 CODE >102:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-1294 text14 CODE >105:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-129A text14 CODE >108:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-129E text14 CODE >113:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-12A0 text2 CODE >3:C:\display-7-segm\display7seg.c
-12A0 text2 CODE >5:C:\display-7-segm\display7seg.c
-12A2 text2 CODE >6:C:\display-7-segm\display7seg.c
-12A2 text2 CODE >7:C:\display-7-segm\display7seg.c
-12B0 text2 CODE >8:C:\display-7-segm\display7seg.c
-12B2 text2 CODE >10:C:\display-7-segm\display7seg.c
-12B2 text2 CODE >11:C:\display-7-segm\display7seg.c
-12C0 text2 CODE >12:C:\display-7-segm\display7seg.c
-12C2 text2 CODE >14:C:\display-7-segm\display7seg.c
-12C2 text2 CODE >15:C:\display-7-segm\display7seg.c
-12D0 text2 CODE >16:C:\display-7-segm\display7seg.c
-12D2 text2 CODE >18:C:\display-7-segm\display7seg.c
-12D2 text2 CODE >19:C:\display-7-segm\display7seg.c
-12E0 text2 CODE >20:C:\display-7-segm\display7seg.c
-12E2 text2 CODE >22:C:\display-7-segm\display7seg.c
-12E2 text2 CODE >23:C:\display-7-segm\display7seg.c
-12F0 text2 CODE >24:C:\display-7-segm\display7seg.c
-12F2 text2 CODE >26:C:\display-7-segm\display7seg.c
-12F2 text2 CODE >27:C:\display-7-segm\display7seg.c
-1300 text2 CODE >28:C:\display-7-segm\display7seg.c
-1302 text2 CODE >30:C:\display-7-segm\display7seg.c
-1302 text2 CODE >31:C:\display-7-segm\display7seg.c
-1310 text2 CODE >32:C:\display-7-segm\display7seg.c
-1312 text2 CODE >34:C:\display-7-segm\display7seg.c
-1312 text2 CODE >35:C:\display-7-segm\display7seg.c
-1320 text2 CODE >36:C:\display-7-segm\display7seg.c
-1322 text2 CODE >38:C:\display-7-segm\display7seg.c
-1322 text2 CODE >39:C:\display-7-segm\display7seg.c
-1330 text2 CODE >40:C:\display-7-segm\display7seg.c
-1332 text2 CODE >42:C:\display-7-segm\display7seg.c
-1332 text2 CODE >43:C:\display-7-segm\display7seg.c
-1340 text2 CODE >45:C:\display-7-segm\display7seg.c
-1342 text2 CODE >5:C:\display-7-segm\display7seg.c
-1392 text2 CODE >46:C:\display-7-segm\display7seg.c
-1394 text1 CODE >71:C:\display-7-segm\display7seg.c
-1394 text1 CODE >72:C:\display-7-segm\display7seg.c
-139C text1 CODE >73:C:\display-7-segm\display7seg.c
-13B8 text1 CODE >74:C:\display-7-segm\display7seg.c
-13E0 text1 CODE >75:C:\display-7-segm\display7seg.c
-13E4 text1 CODE >76:C:\display-7-segm\display7seg.c
+F06 text13 CODE >22:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+F06 text13 CODE >24:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+F0A text13 CODE >26:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+F0C text13 CODE >27:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+F24 text13 CODE >28:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+F30 text13 CODE >29:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+F3A text13 CODE >30:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+F52 text13 CODE >31:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+F5E text13 CODE >32:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+F68 text13 CODE >33:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+F80 text13 CODE >34:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+F8C text13 CODE >35:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+F96 text13 CODE >36:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+FAE text13 CODE >37:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+FBA text13 CODE >38:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+FC4 text13 CODE >39:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+FDC text13 CODE >40:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+FE8 text13 CODE >41:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+FF2 text13 CODE >42:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+100A text13 CODE >43:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+1016 text13 CODE >44:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+1020 text13 CODE >45:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+1024 text13 CODE >46:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+1028 text13 CODE >47:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+1038 text13 CODE >48:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+1048 text13 CODE >49:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+104C text13 CODE >50:C:\display-7-segm\Unimic/sources/unmc_rtcc_01.c
+104E text16 CODE >35:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+104E text16 CODE >43:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1052 text16 CODE >46:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+10AE text16 CODE >48:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+10B0 text16 CODE >51:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+10C0 text16 CODE >52:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+10D0 text16 CODE >53:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+10E0 text16 CODE >55:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+10E6 text16 CODE >58:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+10EA text16 CODE >61:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+10F8 text16 CODE >63:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+10FE text16 CODE >65:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+110C text16 CODE >67:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1114 text16 CODE >68:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+111A text16 CODE >71:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1120 text16 CODE >72:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1124 text16 CODE >74:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1128 text16 CODE >75:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+112C text16 CODE >76:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1138 text16 CODE >78:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+113E text16 CODE >79:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1144 text16 CODE >82:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1148 text16 CODE >83:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+114C text16 CODE >84:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1150 text16 CODE >85:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1154 text16 CODE >86:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1158 text16 CODE >87:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+115C text16 CODE >89:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1162 text16 CODE >91:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1166 text16 CODE >92:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+116C text16 CODE >94:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1170 text16 CODE >97:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1176 text16 CODE >99:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+117A text16 CODE >101:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+117C text16 CODE >104:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1182 text16 CODE >106:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1186 text16 CODE >107:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1188 text16 CODE >110:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+118E text16 CODE >113:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1192 text16 CODE >118:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+1194 text15 CODE >34:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1194 text15 CODE >42:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1198 text15 CODE >44:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+11D0 text15 CODE >46:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+11D2 text15 CODE >49:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+11E2 text15 CODE >50:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+11F2 text15 CODE >52:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+11F8 text15 CODE >55:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+11FC text15 CODE >58:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+120A text15 CODE >60:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1210 text15 CODE >62:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+121E text15 CODE >64:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1226 text15 CODE >65:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+122C text15 CODE >68:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1232 text15 CODE >69:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1236 text15 CODE >71:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+123A text15 CODE >72:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+123E text15 CODE >73:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+124E text15 CODE >76:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1254 text15 CODE >77:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1258 text15 CODE >79:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+125C text15 CODE >80:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1260 text15 CODE >81:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1264 text15 CODE >82:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1268 text15 CODE >84:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+126E text15 CODE >86:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1272 text15 CODE >87:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1278 text15 CODE >89:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+127C text15 CODE >92:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1282 text15 CODE >94:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1286 text15 CODE >96:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1288 text15 CODE >99:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+128E text15 CODE >101:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1292 text15 CODE >102:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+1294 text15 CODE >105:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+129A text15 CODE >108:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+129E text15 CODE >113:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+12A0 text3 CODE >3:C:\display-7-segm\display7seg.c
+12A0 text3 CODE >5:C:\display-7-segm\display7seg.c
+12A2 text3 CODE >6:C:\display-7-segm\display7seg.c
+12A2 text3 CODE >7:C:\display-7-segm\display7seg.c
+12B0 text3 CODE >8:C:\display-7-segm\display7seg.c
+12B2 text3 CODE >10:C:\display-7-segm\display7seg.c
+12B2 text3 CODE >11:C:\display-7-segm\display7seg.c
+12C0 text3 CODE >12:C:\display-7-segm\display7seg.c
+12C2 text3 CODE >14:C:\display-7-segm\display7seg.c
+12C2 text3 CODE >15:C:\display-7-segm\display7seg.c
+12D0 text3 CODE >16:C:\display-7-segm\display7seg.c
+12D2 text3 CODE >18:C:\display-7-segm\display7seg.c
+12D2 text3 CODE >19:C:\display-7-segm\display7seg.c
+12E0 text3 CODE >20:C:\display-7-segm\display7seg.c
+12E2 text3 CODE >22:C:\display-7-segm\display7seg.c
+12E2 text3 CODE >23:C:\display-7-segm\display7seg.c
+12F0 text3 CODE >24:C:\display-7-segm\display7seg.c
+12F2 text3 CODE >26:C:\display-7-segm\display7seg.c
+12F2 text3 CODE >27:C:\display-7-segm\display7seg.c
+1300 text3 CODE >28:C:\display-7-segm\display7seg.c
+1302 text3 CODE >30:C:\display-7-segm\display7seg.c
+1302 text3 CODE >31:C:\display-7-segm\display7seg.c
+1310 text3 CODE >32:C:\display-7-segm\display7seg.c
+1312 text3 CODE >34:C:\display-7-segm\display7seg.c
+1312 text3 CODE >35:C:\display-7-segm\display7seg.c
+1320 text3 CODE >36:C:\display-7-segm\display7seg.c
+1322 text3 CODE >38:C:\display-7-segm\display7seg.c
+1322 text3 CODE >39:C:\display-7-segm\display7seg.c
+1330 text3 CODE >40:C:\display-7-segm\display7seg.c
+1332 text3 CODE >42:C:\display-7-segm\display7seg.c
+1332 text3 CODE >43:C:\display-7-segm\display7seg.c
+1340 text3 CODE >45:C:\display-7-segm\display7seg.c
+1342 text3 CODE >5:C:\display-7-segm\display7seg.c
+1392 text3 CODE >46:C:\display-7-segm\display7seg.c
+1394 text1 CODE >73:C:\display-7-segm\display7seg.c
+1394 text1 CODE >74:C:\display-7-segm\display7seg.c
+139C text1 CODE >75:C:\display-7-segm\display7seg.c
+13B8 text1 CODE >76:C:\display-7-segm\display7seg.c
+13E0 text1 CODE >77:C:\display-7-segm\display7seg.c
+13E4 text1 CODE >78:C:\display-7-segm\display7seg.c
 13E6 text1 CODE >80:C:\display-7-segm\display7seg.c
-13F2 text1 CODE >81:C:\display-7-segm\display7seg.c
-13F4 text1 CODE >82:C:\display-7-segm\display7seg.c
-13F6 text1 CODE >83:C:\display-7-segm\display7seg.c
-1406 text1 CODE >84:C:\display-7-segm\display7seg.c
-1408 text1 CODE >85:C:\display-7-segm\display7seg.c
-1414 text1 CODE >86:C:\display-7-segm\display7seg.c
-1416 text1 CODE >87:C:\display-7-segm\display7seg.c
-1426 text1 CODE >88:C:\display-7-segm\display7seg.c
-1428 text1 CODE >90:C:\display-7-segm\display7seg.c
-1436 text1 CODE >76:C:\display-7-segm\display7seg.c
-1446 text1 CODE >92:C:\display-7-segm\display7seg.c
-1448 text13 CODE >8:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-1448 text13 CODE >14:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-144C text13 CODE >15:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-1450 text13 CODE >16:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-1458 text13 CODE >17:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-145E text13 CODE >19:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-1462 text13 CODE >20:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-146A text13 CODE >21:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-1470 text13 CODE >23:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-1478 text13 CODE >24:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-1480 text13 CODE >25:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-1484 text13 CODE >26:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-1486 text13 CODE >27:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-148C text13 CODE >28:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-1490 text13 CODE >26:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-1498 text13 CODE >31:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-149E text13 CODE >32:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-14AA text13 CODE >33:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-14B2 text13 CODE >34:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-14B6 text13 CODE >36:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-14BC text13 CODE >37:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-14C2 text13 CODE >39:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-14C8 text13 CODE >40:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-14D2 text13 CODE >41:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-14DC text13 CODE >42:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
-14DE text7 CODE >119:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-14DE text7 CODE >122:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-14E0 text7 CODE >123:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-14E2 text7 CODE >128:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-14E4 text7 CODE >129:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-14E6 text7 CODE >134:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-14E8 text7 CODE >135:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-14EA text7 CODE >136:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-14EC text7 CODE >137:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-14EE text7 CODE >139:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-14F4 text7 CODE >140:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-14FA text7 CODE >141:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-1500 text7 CODE >143:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-150C text7 CODE >144:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-1512 text7 CODE >145:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-1518 text7 CODE >143:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-151C text7 CODE >148:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-1522 text7 CODE >150:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-1530 text7 CODE >151:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-154C text7 CODE >153:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-1552 text7 CODE >150:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-155C text7 CODE >156:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-155E text9 CODE >25:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-1560 text9 CODE >27:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-1578 text9 CODE >28:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-1592 text9 CODE >29:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-15AE text9 CODE >30:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-15C8 text9 CODE >32:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-15CA text9 CODE >33:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-15CC text9 CODE >34:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-15D0 text9 CODE >35:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-15D2 text9 CODE >36:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-15D4 cinit CODE >2390:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15D4 cinit CODE >2392:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15D4 cinit CODE >2395:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15D4 cinit CODE >2505:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15D8 cinit CODE >2506:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15DA cinit CODE >2507:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15DA cinit CODE >2508:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15DC cinit CODE >2509:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15DE cinit CODE >2510:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15E0 cinit CODE >2513:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15E2 cinit CODE >2516:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15E6 cinit CODE >2517:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15E8 cinit CODE >2518:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15E8 cinit CODE >2519:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15EA cinit CODE >2520:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15EC cinit CODE >2521:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15EE cinit CODE >2526:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15F0 cinit CODE >2527:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15F2 cinit CODE >2528:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15F4 cinit CODE >2529:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15F6 cinit CODE >2530:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15F8 cinit CODE >2531:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15FA cinit CODE >2532:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-15FE cinit CODE >2533:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-1602 cinit CODE >2534:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-1602 cinit CODE >2535:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-1604 cinit CODE >2536:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-1608 cinit CODE >2537:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-160A cinit CODE >2538:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-160C cinit CODE >2539:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-160E cinit CODE >2545:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-160E cinit CODE >2547:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-1610 cinit CODE >2548:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-1612 cinit CODE >2549:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-1614 cinit CODE >2550:C:\Users\Matias\AppData\Local\Temp\s1g8s.
-1618 text6 CODE >33:C:\display-7-segm\main.c
-1618 text6 CODE >35:C:\display-7-segm\main.c
-161A text6 CODE >36:C:\display-7-segm\main.c
-161C text6 CODE >37:C:\display-7-segm\main.c
-161E text6 CODE >38:C:\display-7-segm\main.c
-1620 text6 CODE >39:C:\display-7-segm\main.c
-1622 text6 CODE >40:C:\display-7-segm\main.c
-1624 text6 CODE >41:C:\display-7-segm\main.c
-1626 text6 CODE >42:C:\display-7-segm\main.c
-162A text6 CODE >43:C:\display-7-segm\main.c
-162E text6 CODE >44:C:\display-7-segm\main.c
-1632 text6 CODE >48:C:\display-7-segm\main.c
-1636 text6 CODE >50:C:\display-7-segm\main.c
-163A text6 CODE >51:C:\display-7-segm\main.c
-163E text6 CODE >52:C:\display-7-segm\main.c
-1642 text6 CODE >53:C:\display-7-segm\main.c
-1646 text6 CODE >54:C:\display-7-segm\main.c
-164A text6 CODE >55:C:\display-7-segm\main.c
-164C text6 CODE >56:C:\display-7-segm\main.c
-1650 text6 CODE >57:C:\display-7-segm\main.c
-1654 text6 CODE >59:C:\display-7-segm\main.c
-1656 text6 CODE >61:C:\display-7-segm\main.c
-1658 text0 CODE >78:C:\display-7-segm\main.c
-1658 text0 CODE >79:C:\display-7-segm\main.c
-165C text0 CODE >80:C:\display-7-segm\main.c
-1660 text0 CODE >82:C:\display-7-segm\main.c
-1668 text0 CODE >84:C:\display-7-segm\main.c
-166A text0 CODE >85:C:\display-7-segm\main.c
-166E text0 CODE >92:C:\display-7-segm\main.c
-167A text0 CODE >94:C:\display-7-segm\main.c
-167E text0 CODE >96:C:\display-7-segm\main.c
-1690 text0 CODE >88:C:\display-7-segm\main.c
-1692 text0 CODE >102:C:\display-7-segm\main.c
-1696 text8 CODE >86:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-1698 text8 CODE >88:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-169A text8 CODE >93:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16A0 text8 CODE >96:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16A2 text8 CODE >97:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16A4 text8 CODE >98:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16A6 text8 CODE >99:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16A8 text8 CODE >101:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16AE text8 CODE >102:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16B2 text8 CODE >103:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16B2 text8 CODE >104:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16B4 text8 CODE >106:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16B6 text8 CODE >113:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16BE text8 CODE >114:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16C6 text8 CODE >115:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-16C8 text4 CODE >15:C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
-16C8 text4 CODE >37:C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
-16D4 text4 CODE >38:C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
-16DC text4 CODE >39:C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
-16E4 text4 CODE >52:C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
-16EE text4 CODE >53:C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
-16F0 text10 CODE >8:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
-16F2 text10 CODE >11:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
-16FA text10 CODE >12:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
-1700 text10 CODE >13:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
-1702 text11 CODE >8:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
-1704 text11 CODE >11:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
-170C text11 CODE >12:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
-1712 text11 CODE >13:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
-1714 text16 CODE >21:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
-1714 text16 CODE >26:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
-1716 text16 CODE >29:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
-171A text16 CODE >30:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
-171E text16 CODE >39:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
-1722 text16 CODE >45:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
-1724 text16 CODE >46:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
-1726 text3 CODE >48:C:\display-7-segm\display7seg.c
-1726 text3 CODE >49:C:\display-7-segm\display7seg.c
-1728 text3 CODE >50:C:\display-7-segm\display7seg.c
-172A text3 CODE >51:C:\display-7-segm\display7seg.c
-172C text3 CODE >52:C:\display-7-segm\display7seg.c
-172E text3 CODE >53:C:\display-7-segm\display7seg.c
-1730 text3 CODE >54:C:\display-7-segm\display7seg.c
-1732 text3 CODE >55:C:\display-7-segm\display7seg.c
-1734 text3 CODE >56:C:\display-7-segm\display7seg.c
-1742 text5 CODE >13:C:\display-7-segm\main.c
-1742 text5 CODE >25:C:\display-7-segm\main.c
+13F6 text1 CODE >85:C:\display-7-segm\display7seg.c
+1406 text1 CODE >86:C:\display-7-segm\display7seg.c
+1408 text1 CODE >87:C:\display-7-segm\display7seg.c
+1418 text1 CODE >89:C:\display-7-segm\display7seg.c
+141A text1 CODE >90:C:\display-7-segm\display7seg.c
+142A text1 CODE >91:C:\display-7-segm\display7seg.c
+142C text1 CODE >93:C:\display-7-segm\display7seg.c
+143A text1 CODE >78:C:\display-7-segm\display7seg.c
+144A text1 CODE >95:C:\display-7-segm\display7seg.c
+144C text14 CODE >8:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+144C text14 CODE >14:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+1450 text14 CODE >15:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+1454 text14 CODE >16:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+145C text14 CODE >17:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+1462 text14 CODE >19:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+1466 text14 CODE >20:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+146E text14 CODE >21:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+1474 text14 CODE >23:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+147C text14 CODE >24:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+1484 text14 CODE >25:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+1488 text14 CODE >26:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+148A text14 CODE >27:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+1490 text14 CODE >28:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+1494 text14 CODE >26:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+149C text14 CODE >31:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+14A2 text14 CODE >32:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+14AE text14 CODE >33:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+14B6 text14 CODE >34:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+14BA text14 CODE >36:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+14C0 text14 CODE >37:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+14C6 text14 CODE >39:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+14CC text14 CODE >40:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+14D6 text14 CODE >41:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+14E0 text14 CODE >42:C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+14E2 text8 CODE >119:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+14E2 text8 CODE >122:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+14E4 text8 CODE >123:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+14E6 text8 CODE >128:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+14E8 text8 CODE >129:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+14EA text8 CODE >134:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+14EC text8 CODE >135:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+14EE text8 CODE >136:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+14F0 text8 CODE >137:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+14F2 text8 CODE >139:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+14F8 text8 CODE >140:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+14FE text8 CODE >141:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+1504 text8 CODE >143:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+1510 text8 CODE >144:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+1516 text8 CODE >145:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+151C text8 CODE >143:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+1520 text8 CODE >148:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+1526 text8 CODE >150:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+1534 text8 CODE >151:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+1550 text8 CODE >153:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+1556 text8 CODE >150:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+1560 text8 CODE >156:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+1562 text10 CODE >25:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+1564 text10 CODE >27:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+157C text10 CODE >28:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+1596 text10 CODE >29:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+15B2 text10 CODE >30:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+15CC text10 CODE >32:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+15CE text10 CODE >33:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+15D0 text10 CODE >34:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+15D4 text10 CODE >35:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+15D6 text10 CODE >36:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+15D8 cinit CODE >2391:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15D8 cinit CODE >2393:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15D8 cinit CODE >2396:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15D8 cinit CODE >2506:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15DC cinit CODE >2507:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15DE cinit CODE >2508:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15DE cinit CODE >2509:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15E0 cinit CODE >2510:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15E2 cinit CODE >2511:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15E4 cinit CODE >2514:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15E6 cinit CODE >2517:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15EA cinit CODE >2518:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15EC cinit CODE >2519:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15EC cinit CODE >2520:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15EE cinit CODE >2521:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15F0 cinit CODE >2522:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15F2 cinit CODE >2527:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15F4 cinit CODE >2528:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15F6 cinit CODE >2529:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15F8 cinit CODE >2530:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15FA cinit CODE >2531:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15FC cinit CODE >2532:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+15FE cinit CODE >2533:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+1602 cinit CODE >2534:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+1606 cinit CODE >2535:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+1606 cinit CODE >2536:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+1608 cinit CODE >2537:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+160C cinit CODE >2538:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+160E cinit CODE >2539:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+1610 cinit CODE >2540:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+1612 cinit CODE >2546:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+1612 cinit CODE >2548:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+1614 cinit CODE >2549:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+1616 cinit CODE >2550:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+1618 cinit CODE >2551:C:\Users\Matias\AppData\Local\Temp\s1l8k.
+161C text7 CODE >33:C:\display-7-segm\main.c
+161C text7 CODE >35:C:\display-7-segm\main.c
+161E text7 CODE >36:C:\display-7-segm\main.c
+1620 text7 CODE >37:C:\display-7-segm\main.c
+1622 text7 CODE >38:C:\display-7-segm\main.c
+1624 text7 CODE >39:C:\display-7-segm\main.c
+1626 text7 CODE >40:C:\display-7-segm\main.c
+1628 text7 CODE >41:C:\display-7-segm\main.c
+162A text7 CODE >42:C:\display-7-segm\main.c
+162E text7 CODE >43:C:\display-7-segm\main.c
+1632 text7 CODE >44:C:\display-7-segm\main.c
+1636 text7 CODE >48:C:\display-7-segm\main.c
+163A text7 CODE >50:C:\display-7-segm\main.c
+163E text7 CODE >51:C:\display-7-segm\main.c
+1642 text7 CODE >52:C:\display-7-segm\main.c
+1646 text7 CODE >53:C:\display-7-segm\main.c
+164A text7 CODE >54:C:\display-7-segm\main.c
+164E text7 CODE >55:C:\display-7-segm\main.c
+1650 text7 CODE >56:C:\display-7-segm\main.c
+1654 text7 CODE >57:C:\display-7-segm\main.c
+1658 text7 CODE >59:C:\display-7-segm\main.c
+165A text7 CODE >61:C:\display-7-segm\main.c
+165C text0 CODE >78:C:\display-7-segm\main.c
+165C text0 CODE >79:C:\display-7-segm\main.c
+1660 text0 CODE >80:C:\display-7-segm\main.c
+1664 text0 CODE >82:C:\display-7-segm\main.c
+166C text0 CODE >84:C:\display-7-segm\main.c
+166E text0 CODE >85:C:\display-7-segm\main.c
+1672 text0 CODE >92:C:\display-7-segm\main.c
+167E text0 CODE >94:C:\display-7-segm\main.c
+1682 text0 CODE >96:C:\display-7-segm\main.c
+1694 text0 CODE >88:C:\display-7-segm\main.c
+1696 text0 CODE >102:C:\display-7-segm\main.c
+169A text9 CODE >86:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+169C text9 CODE >88:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+169E text9 CODE >93:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16A4 text9 CODE >96:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16A6 text9 CODE >97:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16A8 text9 CODE >98:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16AA text9 CODE >99:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16AC text9 CODE >101:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16B2 text9 CODE >102:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16B6 text9 CODE >103:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16B6 text9 CODE >104:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16B8 text9 CODE >106:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16BA text9 CODE >113:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16C2 text9 CODE >114:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16CA text9 CODE >115:C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+16CC text5 CODE >15:C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+16CC text5 CODE >37:C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+16D8 text5 CODE >38:C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+16E0 text5 CODE >39:C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+16E8 text5 CODE >52:C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+16F2 text5 CODE >53:C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+16F4 text2 CODE >58:C:\display-7-segm\display7seg.c
+16F4 text2 CODE >60:C:\display-7-segm\display7seg.c
+1700 text2 CODE >62:C:\display-7-segm\display7seg.c
+1706 text2 CODE >63:C:\display-7-segm\display7seg.c
+1708 text2 CODE >64:C:\display-7-segm\display7seg.c
+170A text2 CODE >65:C:\display-7-segm\display7seg.c
+170C text2 CODE >66:C:\display-7-segm\display7seg.c
+170E text2 CODE >67:C:\display-7-segm\display7seg.c
+1712 text2 CODE >71:C:\display-7-segm\display7seg.c
+1714 text11 CODE >8:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
+1716 text11 CODE >11:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
+171E text11 CODE >12:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
+1724 text11 CODE >13:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
+1726 text12 CODE >8:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
+1728 text12 CODE >11:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
+1730 text12 CODE >12:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
+1736 text12 CODE >13:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
+1738 text17 CODE >21:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
+1738 text17 CODE >26:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
+173A text17 CODE >29:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
+173E text17 CODE >30:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
+1742 text17 CODE >39:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
+1746 text17 CODE >45:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
+1748 text17 CODE >46:C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
+174A text4 CODE >48:C:\display-7-segm\display7seg.c
+174A text4 CODE >49:C:\display-7-segm\display7seg.c
+174C text4 CODE >50:C:\display-7-segm\display7seg.c
+174E text4 CODE >51:C:\display-7-segm\display7seg.c
+1750 text4 CODE >52:C:\display-7-segm\display7seg.c
+1752 text4 CODE >53:C:\display-7-segm\display7seg.c
+1754 text4 CODE >54:C:\display-7-segm\display7seg.c
+1756 text4 CODE >55:C:\display-7-segm\display7seg.c
+1758 text4 CODE >56:C:\display-7-segm\display7seg.c
+1766 text6 CODE >13:C:\display-7-segm\main.c
+1766 text6 CODE >25:C:\display-7-segm\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -441,73 +449,75 @@ __Hspace_2 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __CFG_T1DIG$ON 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\display-7-segm.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
 RtccWriteTime@tempHourWDay 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 _T1CONbits FCD 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-_Delay1KTCYx 1702 0 CODE 0 text11 dist/default/production\display-7-segm.production.obj
+_Delay1KTCYx 1726 0 CODE 0 text12 dist/default/production\display-7-segm.production.obj
 __CFG_WPCFG$OFF 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __Lsmallconst F00 0 SMALLCONST 0 smallconst dist/default/production\display-7-segm.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
+___sp 0 0 STACK 2 stack C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
 _anio 53 0 COMRAM 1 dataCOMRAM dist/default/production\display-7-segm.production.obj
 _flag 2F8 -299 COMRAM 1 bitbssCOMRAM dist/default/production\display-7-segm.production.obj
 _hora 59 0 COMRAM 1 dataCOMRAM dist/default/production\display-7-segm.production.obj
-_main 1658 0 CODE 0 text0 dist/default/production\display-7-segm.production.obj
-start 0 0 CODE 0 init C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
+_main 165C 0 CODE 0 text0 dist/default/production\display-7-segm.production.obj
+_on_numbers 16F4 0 CODE 0 text2 dist/default/production\display-7-segm.production.obj
+start 0 0 CODE 0 init C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
 RtccWriteDate@tempDayMonth 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\display-7-segm.production.obj
 ?___wmul 33 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
-__end_of_Write_RTC 104E 0 CODE 0 text12 dist/default/production\display-7-segm.production.obj
+__end_of_Write_RTC 104E 0 CODE 0 text13 dist/default/production\display-7-segm.production.obj
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\display-7-segm.production.obj
 __pbitbssCOMRAM 2F8 -299 COMRAM 1 bitbssCOMRAM dist/default/production\display-7-segm.production.obj
 __size_of_Write_RTC 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\display-7-segm.production.obj
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\display-7-segm.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
-intlevel0 0 0 CODE 0 text C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
-intlevel1 0 0 CODE 0 text C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
-intlevel2 0 0 CODE 0 text C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
-intlevel3 0 0 CODE 0 text C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
+__accesstop 60 0 ABS 0 - C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
+intlevel0 0 0 CODE 0 text C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
+intlevel1 0 0 CODE 0 text C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
+intlevel2 0 0 CODE 0 text C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
+intlevel3 0 0 CODE 0 text C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\display-7-segm.production.obj
 _OSCCONbits FD3 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\display-7-segm.production.obj
 __CFG_RTCOSC$T1OSCREF 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 RtccWriteTime@wasOn 37 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\display-7-segm.production.obj
-_Write_RTC F06 0 CODE 0 text12 dist/default/production\display-7-segm.production.obj
+_Write_RTC F06 0 CODE 0 text13 dist/default/production\display-7-segm.production.obj
 RtccWriteTime@di 35 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 ___awdiv@sign 38 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\display-7-segm.production.obj
-__pidataCOMRAM 1736 0 CODE 0 idataCOMRAM dist/default/production\display-7-segm.production.obj
+__pidataCOMRAM 175A 0 CODE 0 idataCOMRAM dist/default/production\display-7-segm.production.obj
 __size_of_clear_Segment 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 ___wmul@multiplicand 35 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 _ADCON0 FC2 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 _ADCON1 FC1 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-_Delay100TCYx 16F0 0 CODE 0 text10 dist/default/production\display-7-segm.production.obj
+_Delay100TCYx 1714 0 CODE 0 text11 dist/default/production\display-7-segm.production.obj
+__end_of_on_numbers 1714 0 CODE 0 text2 dist/default/production\display-7-segm.production.obj
 _ANCON0 F48 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 _ANCON1 F49 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 ___awdiv@dividend 33 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 Delay100TCYx@unit 33 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\display-7-segm.production.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\display-7-segm.production.obj
-__end_of___wmul 16F0 0 CODE 0 text4 dist/default/production\display-7-segm.production.obj
+__end_of___wmul 16F4 0 CODE 0 text5 dist/default/production\display-7-segm.production.obj
 lcd_send_byte@address 36 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 _EECON2 FA7 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\display-7-segm.production.obj
-_RtccWriteDate 104E 0 CODE 0 text15 dist/default/production\display-7-segm.production.obj
-_RtccWriteTime 1194 0 CODE 0 text14 dist/default/production\display-7-segm.production.obj
+_RtccWriteDate 104E 0 CODE 0 text16 dist/default/production\display-7-segm.production.obj
+_RtccWriteTime 1194 0 CODE 0 text15 dist/default/production\display-7-segm.production.obj
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\display-7-segm.production.obj
 __Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\display-7-segm.production.obj
 ___awdiv@divisor 35 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 Delay1KTCYx@unit 33 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
-__end_of___awdiv 14DE 0 CODE 0 text13 dist/default/production\display-7-segm.production.obj
-__end_of_clear_Segment 1736 0 CODE 0 text3 dist/default/production\display-7-segm.production.obj
+__end_of___awdiv 14E2 0 CODE 0 text14 dist/default/production\display-7-segm.production.obj
+__end_of_clear_Segment 175A 0 CODE 0 text4 dist/default/production\display-7-segm.production.obj
 _OSCTUNEbits F9B 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-__end_of_on_number 1394 0 CODE 0 text2 dist/default/production\display-7-segm.production.obj
+__end_of_on_number 1394 0 CODE 0 text3 dist/default/production\display-7-segm.production.obj
 RtccWriteDate@di 35 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __size_of_Setup 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __size_of_on_number 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
@@ -518,16 +528,16 @@ __HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\display-7-segm.production
 RtccWriteTime@tempMinSec 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\display-7-segm.production.obj
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-start_initialization 15D4 0 CODE 0 cinit dist/default/production\display-7-segm.production.obj
+start_initialization 15D8 0 CODE 0 cinit dist/default/production\display-7-segm.production.obj
 _segundo_d 51 0 COMRAM 1 nvCOMRAM dist/default/production\display-7-segm.production.obj
 _segundo_u 52 0 COMRAM 1 nvCOMRAM dist/default/production\display-7-segm.production.obj
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\display-7-segm.production.obj
 _TRISBbits F93 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-_on_number 12A0 0 CODE 0 text2 dist/default/production\display-7-segm.production.obj
+_on_number 12A0 0 CODE 0 text3 dist/default/production\display-7-segm.production.obj
 ___rparam_used 1 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 _RTCCFG F3F 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-__end_of_Delay100TCYx 1702 0 CODE 0 text10 dist/default/production\display-7-segm.production.obj
+__end_of_Delay100TCYx 1726 0 CODE 0 text11 dist/default/production\display-7-segm.production.obj
 RtccWriteDate@pDt 33 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 _minuto_d 4F 0 COMRAM 1 nvCOMRAM dist/default/production\display-7-segm.production.obj
 _minuto_u 50 0 COMRAM 1 nvCOMRAM dist/default/production\display-7-segm.production.obj
@@ -569,7 +579,7 @@ __Hbank14 0 0 ABS 0 bank14 dist/default/production\display-7-segm.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\display-7-segm.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\display-7-segm.production.obj
 write@number 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
-__smallconst F00 0 SMALLCONST 0 smallconst C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
+__smallconst F00 0 SMALLCONST 0 smallconst C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
 __size_of_lcd_init 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __size_of_RtccWriteDate 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __size_of_RtccWriteTime 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
@@ -577,7 +587,7 @@ __Hcomram 0 0 ABS 0 comram dist/default/production\display-7-segm.production.obj
 __Hconfig 10000 0 CONFIG 0 config dist/default/production\display-7-segm.production.obj
 __CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 on_number@number 33 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
-__end_of_Delay1KTCYx 1714 0 CODE 0 text11 dist/default/production\display-7-segm.production.obj
+__end_of_Delay1KTCYx 1738 0 CODE 0 text12 dist/default/production\display-7-segm.production.obj
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\display-7-segm.production.obj
 __Lbank1 0 0 ABS 0 bank1 dist/default/production\display-7-segm.production.obj
 __Lbank2 0 0 ABS 0 bank2 dist/default/production\display-7-segm.production.obj
@@ -628,8 +638,9 @@ __Ltemp 0 0 COMRAM 1 temp dist/default/production\display-7-segm.production.obj
 __Ltext 0 0 ABS 0 text dist/default/production\display-7-segm.production.obj
 RtccWriteTime@pTm 33 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-___wmul 16C8 0 CODE 0 text4 dist/default/production\display-7-segm.production.obj
+___wmul 16CC 0 CODE 0 text5 dist/default/production\display-7-segm.production.obj
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\display-7-segm.production.obj
+on_numbers@number 37 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __Hintret 0 0 ABS 0 intret dist/default/production\display-7-segm.production.obj
 __Hirdata 0 0 CODE 0 irdata dist/default/production\display-7-segm.production.obj
 __S0 10000 0 ABS 0 - dist/default/production\display-7-segm.production.obj
@@ -642,28 +653,29 @@ _anio_d 46 0 COMRAM 1 nvCOMRAM dist/default/production\display-7-segm.production
 _anio_u 47 0 COMRAM 1 nvCOMRAM dist/default/production\display-7-segm.production.obj
 __CFG_OSC$INTOSC 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __pnvCOMRAM 46 0 COMRAM 1 nvCOMRAM dist/default/production\display-7-segm.production.obj
+__size_of_on_numbers 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __CFG_DSWDTPS$G2 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-__end_of_RtccWriteDate 1194 0 CODE 0 text15 dist/default/production\display-7-segm.production.obj
-__end_of_RtccWriteTime 12A0 0 CODE 0 text14 dist/default/production\display-7-segm.production.obj
+__end_of_RtccWriteDate 1194 0 CODE 0 text16 dist/default/production\display-7-segm.production.obj
+__end_of_RtccWriteTime 12A0 0 CODE 0 text15 dist/default/production\display-7-segm.production.obj
 __CFG_PLLDIV$1 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 _diasem 57 0 COMRAM 1 dataCOMRAM dist/default/production\display-7-segm.production.obj
 __HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\display-7-segm.production.obj
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\display-7-segm.production.obj
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\display-7-segm.production.obj
 __size_of_RtccWrOn 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-_lcd_init 14DE 0 CODE 0 text7 dist/default/production\display-7-segm.production.obj
+_lcd_init 14E2 0 CODE 0 text8 dist/default/production\display-7-segm.production.obj
 __Lintentry 0 0 ABS 0 intentry dist/default/production\display-7-segm.production.obj
 _hora_d 4B 0 COMRAM 1 nvCOMRAM dist/default/production\display-7-segm.production.obj
 _hora_u 4C 0 COMRAM 1 nvCOMRAM dist/default/production\display-7-segm.production.obj
 __Hramtop F00 0 RAM 0 ramtop dist/default/production\display-7-segm.production.obj
 _RTCCFGbits F3F 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-__end_of_lcd_send_nibble 15D4 0 CODE 0 text9 dist/default/production\display-7-segm.production.obj
+__end_of_lcd_send_nibble 15D8 0 CODE 0 text10 dist/default/production\display-7-segm.production.obj
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\display-7-segm.production.obj
 __activetblptr 2 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\display-7-segm.production.obj
 __size_of___wmul 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\display-7-segm.production.obj
-__end_of_lcd_init 155E 0 CODE 0 text7 dist/default/production\display-7-segm.production.obj
+__end_of_lcd_init 1562 0 CODE 0 text8 dist/default/production\display-7-segm.production.obj
 __Htext10 0 0 ABS 0 text10 dist/default/production\display-7-segm.production.obj
 __Htext11 0 0 ABS 0 text11 dist/default/production\display-7-segm.production.obj
 __Htext12 0 0 ABS 0 text12 dist/default/production\display-7-segm.production.obj
@@ -671,22 +683,24 @@ __Htext13 0 0 ABS 0 text13 dist/default/production\display-7-segm.production.obj
 __Htext14 0 0 ABS 0 text14 dist/default/production\display-7-segm.production.obj
 __Htext15 0 0 ABS 0 text15 dist/default/production\display-7-segm.production.obj
 __Htext16 0 0 ABS 0 text16 dist/default/production\display-7-segm.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\display-7-segm.production.obj
 __CFG_DSBOREN$OFF 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __CFG_DSWDTEN$OFF 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 _PIE3bits FA3 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 _Rtcc_read_TimeDate 11 0 COMRAM 1 bssCOMRAM dist/default/production\display-7-segm.production.obj
 _RTCVALH F99 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 _RTCVALL F98 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-_lcd_send_byte 1696 0 CODE 0 text8 dist/default/production\display-7-segm.production.obj
+_lcd_send_byte 169A 0 CODE 0 text9 dist/default/production\display-7-segm.production.obj
 _minuto 5D 0 COMRAM 1 dataCOMRAM dist/default/production\display-7-segm.production.obj
-__ptext10 16F0 0 CODE 0 text10 dist/default/production\display-7-segm.production.obj
-__ptext11 1702 0 CODE 0 text11 dist/default/production\display-7-segm.production.obj
-__ptext12 F06 0 CODE 0 text12 dist/default/production\display-7-segm.production.obj
-__ptext13 1448 0 CODE 0 text13 dist/default/production\display-7-segm.production.obj
-__ptext14 1194 0 CODE 0 text14 dist/default/production\display-7-segm.production.obj
-__ptext15 104E 0 CODE 0 text15 dist/default/production\display-7-segm.production.obj
-__ptext16 1714 0 CODE 0 text16 dist/default/production\display-7-segm.production.obj
-___awdiv 1448 0 CODE 0 text13 dist/default/production\display-7-segm.production.obj
+__ptext10 1562 0 CODE 0 text10 dist/default/production\display-7-segm.production.obj
+__ptext11 1714 0 CODE 0 text11 dist/default/production\display-7-segm.production.obj
+__ptext12 1726 0 CODE 0 text12 dist/default/production\display-7-segm.production.obj
+__ptext13 F06 0 CODE 0 text13 dist/default/production\display-7-segm.production.obj
+__ptext14 144C 0 CODE 0 text14 dist/default/production\display-7-segm.production.obj
+__ptext15 1194 0 CODE 0 text15 dist/default/production\display-7-segm.production.obj
+__ptext16 104E 0 CODE 0 text16 dist/default/production\display-7-segm.production.obj
+__ptext17 1738 0 CODE 0 text17 dist/default/production\display-7-segm.production.obj
+___awdiv 144C 0 CODE 0 text14 dist/default/production\display-7-segm.production.obj
 __Lbank10 0 0 ABS 0 bank10 dist/default/production\display-7-segm.production.obj
 __Lbank11 0 0 ABS 0 bank11 dist/default/production\display-7-segm.production.obj
 __Lbank12 0 0 ABS 0 bank12 dist/default/production\display-7-segm.production.obj
@@ -698,23 +712,24 @@ __CFG_MSSP7B_EN$MSK7 0 0 ABS 0 - dist/default/production\display-7-segm.producti
 __Lcomram 0 0 ABS 0 comram dist/default/production\display-7-segm.production.obj
 __Lconfig FFF8 0 CONFIG 0 config dist/default/production\display-7-segm.production.obj
 ___wmul@multiplier 33 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
+on_numbers@uni 39 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 _LATBbits F8A 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __size_of_caratula 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\display-7-segm.production.obj
 main@count 44 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 _RtccDate 2B 0 COMRAM 1 bssCOMRAM dist/default/production\display-7-segm.production.obj
 _RtccTime 2F 0 COMRAM 1 bssCOMRAM dist/default/production\display-7-segm.production.obj
-_RtccWrOn 1714 0 CODE 0 text16 dist/default/production\display-7-segm.production.obj
+_RtccWrOn 1738 0 CODE 0 text17 dist/default/production\display-7-segm.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\display-7-segm.production.obj
 _RtccAlrmTimeDate 1 0 COMRAM 1 bssCOMRAM dist/default/production\display-7-segm.production.obj
-stackhi EBF 0 ABS 0 - C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
-stacklo 74 0 ABS 0 - C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
-_lcd_send_nibble 155E 0 CODE 0 text9 dist/default/production\display-7-segm.production.obj
+stackhi EBF 0 ABS 0 - C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
+stacklo 74 0 ABS 0 - C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
+_lcd_send_nibble 1562 0 CODE 0 text10 dist/default/production\display-7-segm.production.obj
 write@time 42 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __Lintcode 0 0 CODE 0 intcode dist/default/production\display-7-segm.production.obj
 _segundo 29 0 COMRAM 1 bssCOMRAM dist/default/production\display-7-segm.production.obj
 __Lintret 0 0 ABS 0 intret dist/default/production\display-7-segm.production.obj
-__end_of_RtccWrOn 1726 0 CODE 0 text16 dist/default/production\display-7-segm.production.obj
+__end_of_RtccWrOn 174A 0 CODE 0 text17 dist/default/production\display-7-segm.production.obj
 __Lirdata 0 0 CODE 0 irdata dist/default/production\display-7-segm.production.obj
 __Lspace_0 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __Lspace_1 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
@@ -730,7 +745,7 @@ _buffer2 60 0 BANK0 1 bssBANK0 dist/default/production\display-7-segm.production
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 RtccWriteDate@wasOn 37 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 lcd_send_nibble@nibble 34 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
-end_of_initialization 160E 0 CODE 0 cinit dist/default/production\display-7-segm.production.obj
+end_of_initialization 1612 0 CODE 0 cinit dist/default/production\display-7-segm.production.obj
 __end_of_LCD_INIT_STRING F05 0 SMALLCONST 0 smallconst dist/default/production\display-7-segm.production.obj
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\display-7-segm.production.obj
 __Hintentry 0 0 ABS 0 intentry dist/default/production\display-7-segm.production.obj
@@ -742,20 +757,20 @@ __Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\display-7-segm.product
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\display-7-segm.production.obj
 __Lramtop F00 0 RAM 0 ramtop dist/default/production\display-7-segm.production.obj
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\display-7-segm.production.obj
-__pcinit 15D4 0 CODE 0 cinit dist/default/production\display-7-segm.production.obj
-_caratula 1742 0 CODE 0 text5 dist/default/production\display-7-segm.production.obj
+__pcinit 15D8 0 CODE 0 cinit dist/default/production\display-7-segm.production.obj
+_caratula 1766 0 CODE 0 text6 dist/default/production\display-7-segm.production.obj
 _fecha_d 49 0 COMRAM 1 nvCOMRAM dist/default/production\display-7-segm.production.obj
 _fecha_u 4A 0 COMRAM 1 nvCOMRAM dist/default/production\display-7-segm.production.obj
-__ptext0 1658 0 CODE 0 text0 dist/default/production\display-7-segm.production.obj
+__ptext0 165C 0 CODE 0 text0 dist/default/production\display-7-segm.production.obj
 __ptext1 1394 0 CODE 0 text1 dist/default/production\display-7-segm.production.obj
-__ptext2 12A0 0 CODE 0 text2 dist/default/production\display-7-segm.production.obj
-__ptext3 1726 0 CODE 0 text3 dist/default/production\display-7-segm.production.obj
-__ptext4 16C8 0 CODE 0 text4 dist/default/production\display-7-segm.production.obj
-__ptext5 1742 0 CODE 0 text5 dist/default/production\display-7-segm.production.obj
-__ptext6 1618 0 CODE 0 text6 dist/default/production\display-7-segm.production.obj
-__ptext7 14DE 0 CODE 0 text7 dist/default/production\display-7-segm.production.obj
-__ptext8 1696 0 CODE 0 text8 dist/default/production\display-7-segm.production.obj
-__ptext9 155E 0 CODE 0 text9 dist/default/production\display-7-segm.production.obj
+__ptext2 16F4 0 CODE 0 text2 dist/default/production\display-7-segm.production.obj
+__ptext3 12A0 0 CODE 0 text3 dist/default/production\display-7-segm.production.obj
+__ptext4 174A 0 CODE 0 text4 dist/default/production\display-7-segm.production.obj
+__ptext5 16CC 0 CODE 0 text5 dist/default/production\display-7-segm.production.obj
+__ptext6 1766 0 CODE 0 text6 dist/default/production\display-7-segm.production.obj
+__ptext7 161C 0 CODE 0 text7 dist/default/production\display-7-segm.production.obj
+__ptext8 14E2 0 CODE 0 text8 dist/default/production\display-7-segm.production.obj
+__ptext9 169A 0 CODE 0 text9 dist/default/production\display-7-segm.production.obj
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\display-7-segm.production.obj
 __Ltext10 0 0 ABS 0 text10 dist/default/production\display-7-segm.production.obj
 __Ltext11 0 0 ABS 0 text11 dist/default/production\display-7-segm.production.obj
@@ -764,33 +779,34 @@ __Ltext13 0 0 ABS 0 text13 dist/default/production\display-7-segm.production.obj
 __Ltext14 0 0 ABS 0 text14 dist/default/production\display-7-segm.production.obj
 __Ltext15 0 0 ABS 0 text15 dist/default/production\display-7-segm.production.obj
 __Ltext16 0 0 ABS 0 text16 dist/default/production\display-7-segm.production.obj
-__ramtop F00 0 RAM 0 ramtop C:\Users\Matias\AppData\Local\Temp\s1g8s.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\display-7-segm.production.obj
+__ramtop F00 0 RAM 0 ramtop C:\Users\Matias\AppData\Local\Temp\s1l8k.obj
 __size_of_lcd_send_byte 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\display-7-segm.production.obj
-__end_of_caratula 1744 0 CODE 0 text5 dist/default/production\display-7-segm.production.obj
+__end_of_caratula 1768 0 CODE 0 text6 dist/default/production\display-7-segm.production.obj
 lcd_init@i 37 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __psmallconst F00 0 SMALLCONST 0 smallconst dist/default/production\display-7-segm.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\display-7-segm.production.obj
 ___param_bank 10 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\display-7-segm.production.obj
-__end_of__initialization 160E 0 CODE 0 cinit dist/default/production\display-7-segm.production.obj
+__end_of__initialization 1612 0 CODE 0 cinit dist/default/production\display-7-segm.production.obj
 _LCD_INIT_STRING F01 0 SMALLCONST 0 smallconst dist/default/production\display-7-segm.production.obj
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\display-7-segm.production.obj
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\display-7-segm.production.obj
 RtccWriteDate@wasAlrm 38 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 RtccWriteDate@wasWrEn 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __size_of_lcd_send_nibble 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-__end_of_lcd_send_byte 16C8 0 CODE 0 text8 dist/default/production\display-7-segm.production.obj
+__end_of_lcd_send_byte 16CC 0 CODE 0 text9 dist/default/production\display-7-segm.production.obj
 __pcstackCOMRAM 33 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __Hend_init 4 0 CODE 0 end_init dist/default/production\display-7-segm.production.obj
 lcd_send_byte@n 35 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
-__end_of_main 1696 0 CODE 0 text0 dist/default/production\display-7-segm.production.obj
-__end_of_Setup 1658 0 CODE 0 text6 dist/default/production\display-7-segm.production.obj
-_Setup 1618 0 CODE 0 text6 dist/default/production\display-7-segm.production.obj
+__end_of_main 169A 0 CODE 0 text0 dist/default/production\display-7-segm.production.obj
+__end_of_Setup 165C 0 CODE 0 text7 dist/default/production\display-7-segm.production.obj
+_Setup 161C 0 CODE 0 text7 dist/default/production\display-7-segm.production.obj
 _TRISA F92 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 _TRISB F93 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 _TRISC F94 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-__end_of_write 1448 0 CODE 0 text1 dist/default/production\display-7-segm.production.obj
+__end_of_write 144C 0 CODE 0 text1 dist/default/production\display-7-segm.production.obj
 __CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __HRAM 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
 __Hbss 0 0 RAM 1 bss dist/default/production\display-7-segm.production.obj
@@ -807,7 +823,7 @@ _write 1394 0 CODE 0 text1 dist/default/production\display-7-segm.production.obj
 RtccWriteDate@tempHourWDay 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __LbitbssCOMRAM 0 0 ABS 0 bitbssCOMRAM dist/default/production\display-7-segm.production.obj
 __CFG_CPUDIV$OSC1 0 0 ABS 0 - dist/default/production\display-7-segm.production.obj
-__initialization 15D4 0 CODE 0 cinit dist/default/production\display-7-segm.production.obj
+__initialization 15D8 0 CODE 0 cinit dist/default/production\display-7-segm.production.obj
 write@dec 40 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 write@uni 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\display-7-segm.production.obj
@@ -816,7 +832,7 @@ __Hfardata 0 0 FARRAM 0 fardata dist/default/production\display-7-segm.productio
 ___wmul@product 37 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __Hsmallconst F06 0 SMALLCONST 0 smallconst dist/default/production\display-7-segm.production.obj
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\display-7-segm.production.obj
-_clear_Segment 1726 0 CODE 0 text3 dist/default/production\display-7-segm.production.obj
+_clear_Segment 174A 0 CODE 0 text4 dist/default/production\display-7-segm.production.obj
 RtccWriteTime@wasAlrm 38 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 RtccWriteTime@wasWrEn 39 0 COMRAM 1 cstackCOMRAM dist/default/production\display-7-segm.production.obj
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\display-7-segm.production.obj
@@ -845,7 +861,7 @@ __Hintcode 0 0 CODE 0 intcode dist/default/production\display-7-segm.production.
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text12 0 F06 F06 83E 1
+text13 0 F06 F06 862 1
 reset_vec 0 0 0 4 1
 bssBANK0 1 60 60 14 1
 smallconst 0 F00 F00 6 1

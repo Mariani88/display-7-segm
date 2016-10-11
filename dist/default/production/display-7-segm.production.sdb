@@ -142,7 +142,9 @@ RTCCPTR_MASK_YEAR 3
 [v _on_number on_number `(v  1 e 0 0 ]
 "48
 [v _clear_Segment clear_Segment `(v  1 e 0 0 ]
-"71
+"58
+[v _on_numbers on_numbers `(v  1 e 0 0 ]
+"73
 [v _write write `(v  1 e 0 0 ]
 "13 C:\display-7-segm\main.c
 [v _caratula caratula `(v  1 e 0 0 ]
@@ -368,21 +370,21 @@ RTCCPTR_MASK_YEAR 3
 ]
 [u S242 . 1 `S210 1 . 1 0 `S219 1 . 1 0 `S221 1 . 1 0 `S224 1 . 1 0 `S227 1 . 1 0 `S230 1 . 1 0 `S233 1 . 1 0 `S236 1 . 1 0 `S239 1 . 1 0 ]
 [v _LATBbits LATBbits `VES242  1 e 1 @3978 ]
-[s S1582 . 1 `uc 1 ALRMPTR 1 0 :2:0 
+[s S1583 . 1 `uc 1 ALRMPTR 1 0 :2:0 
 `uc 1 AMASK 1 0 :4:2 
 `uc 1 CHIME 1 0 :1:6 
 `uc 1 ALRMEN 1 0 :1:7 
 ]
 "6740
-[s S1587 . 1 `uc 1 ALRMPTR0 1 0 :1:0 
+[s S1588 . 1 `uc 1 ALRMPTR0 1 0 :1:0 
 `uc 1 ALRMPTR1 1 0 :1:1 
 `uc 1 AMASK0 1 0 :1:2 
 `uc 1 AMASK1 1 0 :1:3 
 `uc 1 AMASK2 1 0 :1:4 
 `uc 1 AMASK3 1 0 :1:5 
 ]
-[u S1594 . 1 `S1582 1 . 1 0 `S1587 1 . 1 0 ]
-[v _ALRMCFGbits ALRMCFGbits `VES1594  1 e 1 @3985 ]
+[u S1595 . 1 `S1583 1 . 1 0 `S1588 1 . 1 0 ]
+[v _ALRMCFGbits ALRMCFGbits `VES1595  1 e 1 @3985 ]
 "6794
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "6850
@@ -504,7 +506,7 @@ RTCCPTR_MASK_YEAR 3
 ]
 [u S94 . 1 `S81 1 . 1 0 `S87 1 . 1 0 ]
 [v _OSCCONbits OSCCONbits `VES94  1 e 1 @4051 ]
-[s S1389 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S1390 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -514,7 +516,7 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "14949
-[s S1398 . 1 `uc 1 . 1 0 :1:0 
+[s S1399 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -523,12 +525,12 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S1407 . 1 `uc 1 . 1 0 :6:0 
+[s S1408 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S1424 . 1 `S1389 1 . 1 0 `S1398 1 . 1 0 `S1407 1 . 1 0 `S1398 1 . 1 0 `S1407 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES1424  1 e 1 @4082 ]
+[u S1425 . 1 `S1390 1 . 1 0 `S1399 1 . 1 0 `S1408 1 . 1 0 `S1399 1 . 1 0 `S1408 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES1425  1 e 1 @4082 ]
 "78 C:\display-7-segm\main.c
 [v _main main `(i  1 e 2 0 ]
 {
@@ -536,18 +538,25 @@ RTCCPTR_MASK_YEAR 3
 [v main@count count `s  1 a 2 17 ]
 "102
 } 0
-"71 C:\display-7-segm\display7seg.c
+"73 C:\display-7-segm\display7seg.c
 [v _write write `(v  1 e 0 0 ]
 {
-"72
-[v write@time time `i  1 a 2 15 ]
-"73
-[v write@dec dec `s  1 a 2 13 ]
 "74
+[v write@time time `i  1 a 2 15 ]
+"75
+[v write@dec dec `s  1 a 2 13 ]
+"76
 [v write@uni uni `s  1 a 2 11 ]
-"71
+"73
 [v write@number number `s  1 p 2 8 ]
-"92
+"95
+} 0
+"58
+[v _on_numbers on_numbers `(v  1 e 0 0 ]
+{
+[v on_numbers@number number `s  1 p 2 4 ]
+[v on_numbers@uni uni `uc  1 p 1 6 ]
+"71
 } 0
 "3
 [v _on_number on_number `(v  1 e 0 0 ]
@@ -643,9 +652,9 @@ RTCCPTR_MASK_YEAR 3
 "34 C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
 [v _RtccWriteTime RtccWriteTime `(E7121  1 e 1 0 ]
 {
-[s S1502 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S1503 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
 "36
-[s S1505 . 2 `uc 1 b0 1 0 :1:0 
+[s S1506 . 2 `uc 1 b0 1 0 :1:0 
 `uc 1 b1 1 0 :1:1 
 `uc 1 b2 1 0 :1:2 
 `uc 1 b3 1 0 :1:3 
@@ -662,10 +671,10 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 b14 1 1 :1:6 
 `uc 1 b15 1 1 :1:7 
 ]
-[u S1522 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1502 1 byte 2 0 `S1505 1 bits 2 0 ]
-[v RtccWriteTime@tempHourWDay tempHourWDay `S1522  1 a 2 9 ]
+[u S1523 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1503 1 byte 2 0 `S1506 1 bits 2 0 ]
+[v RtccWriteTime@tempHourWDay tempHourWDay `S1523  1 a 2 9 ]
 "37
-[v RtccWriteTime@tempMinSec tempMinSec `S1522  1 a 2 7 ]
+[v RtccWriteTime@tempMinSec tempMinSec `S1523  1 a 2 7 ]
 "40
 [v RtccWriteTime@wasWrEn wasWrEn `E7121  1 a 1 6 ]
 "42
@@ -682,9 +691,9 @@ RTCCPTR_MASK_YEAR 3
 "35 C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
 [v _RtccWriteDate RtccWriteDate `(E7121  1 e 1 0 ]
 {
-[s S1502 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S1503 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
 "37
-[s S1505 . 2 `uc 1 b0 1 0 :1:0 
+[s S1506 . 2 `uc 1 b0 1 0 :1:0 
 `uc 1 b1 1 0 :1:1 
 `uc 1 b2 1 0 :1:2 
 `uc 1 b3 1 0 :1:3 
@@ -701,12 +710,12 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 b14 1 1 :1:6 
 `uc 1 b15 1 1 :1:7 
 ]
-[u S1522 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1502 1 byte 2 0 `S1505 1 bits 2 0 ]
-[v RtccWriteDate@tempHourWDay tempHourWDay `S1522  1 a 2 11 ]
+[u S1523 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1503 1 byte 2 0 `S1506 1 bits 2 0 ]
+[v RtccWriteDate@tempHourWDay tempHourWDay `S1523  1 a 2 11 ]
 "38
-[v RtccWriteDate@tempDayMonth tempDayMonth `S1522  1 a 2 9 ]
+[v RtccWriteDate@tempDayMonth tempDayMonth `S1523  1 a 2 9 ]
 "39
-[v RtccWriteDate@tempYear tempYear `S1522  1 a 2 6 ]
+[v RtccWriteDate@tempYear tempYear `S1523  1 a 2 6 ]
 "41
 [v RtccWriteDate@wasWrEn wasWrEn `E7121  1 a 1 8 ]
 "43
