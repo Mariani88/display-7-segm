@@ -1,5 +1,20 @@
 
-# 1 "display7seg.c"
+# 1 "ADconversor.c"
+
+# 13 "C:\Program Files\Microchip\xc8\v1.34\include\plib\delays.h"
+void Delay1TCYx(unsigned char);
+
+# 19
+void Delay10TCYx(unsigned char);
+
+# 25
+void Delay100TCYx(unsigned char);
+
+# 31
+void Delay1KTCYx(unsigned char);
+
+# 37
+void Delay10KTCYx(unsigned char);
 
 # 26 "C:\Program Files\Microchip\xc8\v1.34\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -9739,21 +9754,6 @@ extern void DelayFor18TCY(void);
 extern void DelayPORXLCD(void);
 extern void DelayXLCD(void);
 
-# 13 "C:\Program Files\Microchip\xc8\v1.34\include\plib\delays.h"
-void Delay1TCYx(unsigned char);
-
-# 19
-void Delay10TCYx(unsigned char);
-
-# 25
-void Delay100TCYx(unsigned char);
-
-# 31
-void Delay1KTCYx(unsigned char);
-
-# 37
-void Delay10KTCYx(unsigned char);
-
 # 18 "C:\Program Files\Microchip\xc8\v1.34\include\pic18.h"
 __attribute__((__unsupported__("The flash_write routine is no longer supported. Please use the peripheral library functions: WriteBytesFlash, WriteBlockFlash or WriteWordFlash"))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
 
@@ -9770,91 +9770,6 @@ extern __nonreentrant void _delay(unsigned long);
 extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
-
-# 33 "C:/Archivos de programa/Unimic/unmc_01/headers\unmc_lcd_216.h"
-typedef unsigned char int8;
-typedef unsigned int int16;
-typedef unsigned long int32;
-
-# 98
-void lcd_send_nibble(int8 nibble);
-int8 lcd_read_nibble(void);
-int8 lcd_read_byte(void);
-void lcd_send_byte(int8 address, int8 n);
-
-void lcd_init(void);
-void lcd_gotoxy(int8 x, int8 y);
-void lcd_putc(int8 c);
-void lcd_comand(int8 d);
-void lcd_setcursor_vb(int8 visible, int8 blink);
-void lcd_puts(char *ptr);
-void lcd_putrs(const char *ptr);
-
-# 12 "C:\Program Files\Microchip\xc8\v1.34\include\stdbool.h"
-typedef unsigned char bool;
-
-# 7 "C:\Program Files\Microchip\xc8\v1.34\include\stdarg.h"
-typedef void * va_list[1];
-
-#pragma intrinsic(__va_start)
-extern void * __va_start(void);
-
-#pragma intrinsic(__va_arg)
-extern void * __va_arg(void *, ...);
-
-# 24 "C:\Program Files\Microchip\xc8\v1.34\include\stdio.h"
-extern int errno;
-
-# 55
-struct __prbuf
-{
-char * ptr;
-void (* func)(char);
-};
-
-# 17 "C:\Program Files\Microchip\xc8\v1.34\include\conio.h"
-extern int errno;
-
-
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-# 31
-extern char * cgets(char *);
-extern void cputs(const char *);
-
-# 100 "C:\Program Files\Microchip\xc8\v1.34\include\stdio.h"
-extern int cprintf(char *, ...);
-#pragma printf_check(cprintf)
-
-
-
-extern int _doprnt(struct __prbuf *, const register char *, register va_list);
-
-
-# 192
-#pragma printf_check(vprintf) const
-#pragma printf_check(vsprintf) const
-
-extern char * gets(char *);
-extern int puts(const char *);
-extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
-extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
-extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
-extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
-extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
-extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
-
-#pragma printf_check(printf) const
-#pragma printf_check(sprintf) const
-extern int sprintf(char *, const char *, ...);
-extern int printf(const char *, ...);
 
 
 # 15 "C:/Archivos de programa/Unimic/unmc_01/headers\unmc_config_01.h"
@@ -9881,141 +9796,25 @@ extern int printf(const char *, ...);
 #pragma config WPCFG=OFF
 #pragma config WPDIS=OFF
 
-# 17 "C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h"
-rtccTimeDate RtccTimeDate ,RtccAlrmTimeDate, Rtcc_read_TimeDate ;
+# 7 "ADconversor.h"
+int read_temperature();
 
-char segundo_u;
-char segundo_d;
-char minuto_u;
-char minuto_d;
-char hora_u;
-char hora_d;
-char fecha_u;
-char fecha_d;
-char mes_u;
-char mes_d;
-char dia_semana;
-char anio_u;
-char anio_d;
-bit flag=0;
-int i=0;
-int j=0;
-int a=0;
-int b=0;
-int c=0;
-int k=0;
-int anio=15;
-int mes=9;
-int diasem=3;
-int dia=8;
-int hora=18;
-int minuto=30;
-int segundo=0;
-
-# 51
-rtccTime RtccTime;
-rtccTime RtccTimeVal;
-rtccDate RtccDate;
-
-unsigned char buffer2[20];
-
-void DelayFor18TCY(void);
-
-# 63
-void DelayPORXLCD(void);
-
-# 75
-void Write_RTC(void);
-
-# 112
-void Read_RTC(void);
-
-# 14 "display7seg.h"
-void clear_Segment();
-void on_numbers(short number, bool uni);
-void write(short number);
-
-# 3 "display7seg.c"
-void on_number(short number){
-
-switch (number){
-case 0:
-PORTBbits.RB7 = 1; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.RB4 = 1; PORTBbits.RB3 = 1; PORTBbits.RB2 = 1; PORTBbits.RB1 = 0;
-break;
-
-case 1:
-PORTBbits.RB7 = 0; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.RB4 = 0; PORTBbits.RB3 = 0; PORTBbits.RB2 = 0; PORTBbits.RB1 = 0;
-break;
-
-case 2:
-PORTBbits.RB7 = 1; PORTBbits.RB6 = 1; PORTBbits.RB5 = 0; PORTBbits.RB4 = 1; PORTBbits.RB3 = 1; PORTBbits.RB2 = 0; PORTBbits.RB1 = 1;
-break;
-
-case 3:
-PORTBbits.RB7 = 1; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.RB4 = 1; PORTBbits.RB3 = 0; PORTBbits.RB2 = 0; PORTBbits.RB1 = 1;
-break;
-
-case 4:
-PORTBbits.RB7 = 0; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.RB4 = 0; PORTBbits.RB3 = 0; PORTBbits.RB2 = 1; PORTBbits.RB1 = 1;
-break;
-
-case 5:
-PORTBbits.RB7 = 1; PORTBbits.RB6 = 0; PORTBbits.RB5 = 1; PORTBbits.RB4 = 1; PORTBbits.RB3 = 0; PORTBbits.RB2 = 1; PORTBbits.RB1 = 1;
-break;
-
-case 6:
-PORTBbits.RB7 = 1; PORTBbits.RB6 = 0; PORTBbits.RB5 = 1; PORTBbits.RB4 = 1; PORTBbits.RB3 = 1; PORTBbits.RB2 = 1; PORTBbits.RB1 = 1;
-break;
-
-case 7:
-PORTBbits.RB7 = 1; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.RB4 = 0; PORTBbits.RB3 = 0; PORTBbits.RB2 = 0; PORTBbits.RB1 = 0;
-break;
-
-case 8:
-PORTBbits.RB7 = 1; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.RB4 = 1; PORTBbits.RB3 = 1; PORTBbits.RB2 = 1; PORTBbits.RB1 = 1;
-break;
-
-case 9:
-PORTBbits.RB7 = 1; PORTBbits.RB6 = 1; PORTBbits.RB5 = 1; PORTBbits.RB4 = 1; PORTBbits.RB3 = 0; PORTBbits.RB2 = 1; PORTBbits.RB1 = 1;
-break;
-}
+# 3 "ADconversor.c"
+float calculate_temperature(int voltage){
+return 0.588 * voltage - 50;
 }
 
-void clear_Segment(){
-PORTBbits.RB7 = 0;
-PORTBbits.RB6 = 0;
-PORTBbits.RB5 = 0;
-PORTBbits.RB4 = 0;
-PORTBbits.RB3 = 0;
-PORTBbits.RB2 = 0;
-PORTBbits.RB1 = 0;
-}
+int read_temperature(){
+ADCON0bits.ADON = 1;
+ADCON0bits.GO = 1;
+int voltage = 0;
 
-void on_numbers(short number, bool uni){
-on_number(number);
-
-if(uni){
-PORTCbits.RC7 = 0;
-PORTBbits.RB0 = 1;
-}else{
-PORTCbits.RC7 = 1;
-PORTBbits.RB0 = 0;
-}
-}
-
-void write(short number){
-int time = 0;
-short dec = number/10;
-short uni = number - dec*10;
-clear_Segment();
-while(time < 500){
-on_numbers(uni, 1);
+while(ADCON0bits.GO){
 _delay((unsigned long)((10)*(8000000/4000.0)));
-PORTCbits.RC7 = 1;
-on_numbers(dec, 0);
-PORTBbits.RB0 = 0;
-_delay((unsigned long)((10)*(8000000/4000.0)));
-PORTBbits.RB0 = 1;
-time = time + 20;
+voltage = (int)ADRESH;
+ADCON0bits.GO = voltage == 0;
 }
+ADCON0bits.ADON = 0;
+
+return calculate_temperature(voltage);
 }

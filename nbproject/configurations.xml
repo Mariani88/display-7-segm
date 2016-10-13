@@ -10,6 +10,7 @@
       <itemPath>C:/Archivos de programa/Unimic/unmc_01/headers/unmc_inout_02.h</itemPath>
       <itemPath>head.h</itemPath>
       <itemPath>display7seg.h</itemPath>
+      <itemPath>ADconversor.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -22,6 +23,7 @@
       <itemPath>C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c</itemPath>
       <itemPath>Unimic/sources/unmc_rtcc_01.c</itemPath>
       <itemPath>display7seg.c</itemPath>
+      <itemPath>ADconversor.c</itemPath>
     </logicalFolder>
     <logicalFolder name="f1" displayName="Source owner" projectFiles="true">
     </logicalFolder>

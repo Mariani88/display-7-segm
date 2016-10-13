@@ -1,7 +1,6 @@
-
 #include "display7seg.h"
 #include "head.h"
-
+#include "ADconversor.h"
 
 
 //[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
@@ -39,16 +38,16 @@
     OSCCONbits.IRCF2=1;
     OSCCONbits.SCS0=0;          //oscilator INTRC
     OSCCONbits.SCS1=0;
-    TRISA = 0b11110000;
+    TRISA = 0b00001000;
     TRISB = 0;
     TRISC = 0b0110111;
     //TRISAbits.TRISA0=1;
     //TRISBbits.TRISB0=0;
     //TRISCbits.TRISC0=0;
-    ANCON0=0b11111111;          // Config AN7 to AN0 Digital Ports
+    ANCON0=0b11111110;          // Config AN7 to AN0 Digital Ports
     //ANCON1=0b10010111;          // Config AN11 Analog Port
     ANCON1=0b11111111;          // Config AN12 to AN8 Digital Ports
-    ADCON0=0b00101101;          // Control AN11 Analog Port
+    ADCON0=0b01000000;          // Control AN11 Analog Port
     ADCON1=0b00010000;          // Config Analog Port
     RTCCFGbits.RTCEN=1;
     RTCCFGbits.RTCWREN=1;
@@ -76,27 +75,23 @@ void _delay_s(int millis){
 
     
 int main(void){
-Setup();
-caratula();
+    Setup();
+    caratula();
+    UNI_OFF;
+    DEC_OFF;
 
-short count = 0;
-
-UNI_OFF;
-DEC_OFF;
-
-
-while(1){
+    short count = 0;
     
-    
-    
-    write(count);
-    //_delay_s(1000);
-    count++;
-    
-    if ( count == 100) count = 0;
-    
-   // __delay_ms(98);
-}    
+    while(1){
+        short temperature = read_temperature();
+        
+        write(temperature);
+        
+        count++;
+        
+        if(count == 100) count = 0;
+        
+    }    
        
-return 0;
+    return 0;
 }

@@ -9974,14 +9974,42 @@ void lcd_putrs(const char *ptr);
 #pragma config WPCFG=OFF
 #pragma config WPDIS=OFF
 
-# 13 "main.c"
+
+# 15
+#pragma config CPUDIV=OSC1
+#pragma config CP0=OFF
+#pragma config WDTEN=OFF
+#pragma config PLLDIV=1
+#pragma config STVREN=ON
+#pragma config XINST=OFF
+#pragma config XINST=OFF
+#pragma config OSC=INTOSC
+#pragma config T1DIG=ON
+#pragma config LPT1OSC=OFF
+#pragma config FCMEN=OFF
+#pragma config IESO=OFF
+#pragma config WDTPS=32768
+#pragma config DSWDTOSC=INTOSCREF
+#pragma config RTCOSC=T1OSCREF
+#pragma config DSBOREN=OFF
+#pragma config DSWDTEN=OFF
+#pragma config DSWDTPS=G2
+#pragma config IOL1WAY=OFF
+#pragma config MSSP7B_EN=MSK7
+#pragma config WPCFG=OFF
+#pragma config WPDIS=OFF
+
+# 7 "ADconversor.h"
+int read_temperature();
+
+# 12 "main.c"
 void caratula(void)
 {
 
-# 25
+# 24
 }
 
-# 33
+# 32
 void Setup(void)
 {
 OSCTUNEbits.INTSRC=1;
@@ -9991,16 +10019,16 @@ OSCCONbits.IRCF1=1;
 OSCCONbits.IRCF2=1;
 OSCCONbits.SCS0=0;
 OSCCONbits.SCS1=0;
-TRISA = 0b11110000;
+TRISA = 0b00001000;
 TRISB = 0;
 TRISC = 0b0110111;
 
 
 
-ANCON0=0b11111111;
+ANCON0=0b11111110;
 
 ANCON1=0b11111111;
-ADCON0=0b00101101;
+ADCON0=0b01000000;
 ADCON1=0b00010000;
 RTCCFGbits.RTCEN=1;
 RTCCFGbits.RTCWREN=1;
@@ -10012,7 +10040,7 @@ LATBbits.LATB1 = 1;;
 
 }
 
-# 68
+# 67
 void _delay_s(int millis){
 short it = millis/100;
 short index = 1;
@@ -10026,23 +10054,19 @@ _delay((unsigned long)((98)*(8000000/4000.0)));
 int main(void){
 Setup();
 caratula();
-
-short count = 0;
-
 PORTCbits.RC7 = 1;
 PORTBbits.RB0 = 1;
 
+short count = 0;
 
 while(1){
+short temperature = read_temperature();
 
-
-
-write(count);
+write(temperature);
 
 count++;
 
-if ( count == 100) count = 0;
-
+if(count == 100) count = 0;
 
 }
 

@@ -8078,98 +8078,98 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _number `s ~T0 @X0 1 r1 ]
 [v _uni `uc ~T0 @X0 1 r2 ]
 [f ]
-[; ;display7seg.c: 60: on_number(number);
-"60
+[; ;display7seg.c: 59: on_number(number);
+"59
 [e ( _on_number (1 _number ]
-[; ;display7seg.c: 62: if(uni){
-"62
+[; ;display7seg.c: 61: if(uni){
+"61
 [e $ ! != -> _uni `i -> -> -> 0 `i `uc `i 1050  ]
 {
-[; ;display7seg.c: 63: PORTCbits.RC7 = 0;
-"63
+[; ;display7seg.c: 62: PORTCbits.RC7 = 0;
+"62
 [e = . . _PORTCbits 0 7 -> -> 0 `i `uc ]
-[; ;display7seg.c: 64: PORTBbits.RB0 = 1;
-"64
+[; ;display7seg.c: 63: PORTBbits.RB0 = 1;
+"63
 [e = . . _PORTBbits 0 0 -> -> 1 `i `uc ]
-"65
+"64
 }
-[; ;display7seg.c: 65: }else{
+[; ;display7seg.c: 64: }else{
 [e $U 1051  ]
 [e :U 1050 ]
 {
-[; ;display7seg.c: 66: PORTCbits.RC7 = 1;
-"66
+[; ;display7seg.c: 65: PORTCbits.RC7 = 1;
+"65
 [e = . . _PORTCbits 0 7 -> -> 1 `i `uc ]
-[; ;display7seg.c: 67: PORTBbits.RB0 = 0;
-"67
+[; ;display7seg.c: 66: PORTBbits.RB0 = 0;
+"66
 [e = . . _PORTBbits 0 0 -> -> 0 `i `uc ]
-"68
+"67
 }
 [e :U 1051 ]
+[; ;display7seg.c: 67: }
 [; ;display7seg.c: 68: }
-[; ;display7seg.c: 71: }
-"71
+"68
 [e :UE 1049 ]
 }
-"73
+"70
 [v _write `(v ~T0 @X0 1 ef1`s ]
 {
-[; ;display7seg.c: 73: void write(short number){
+[; ;display7seg.c: 70: void write(short number){
 [e :U _write ]
 [v _number `s ~T0 @X0 1 r1 ]
 [f ]
-"74
+"71
 [v _time `i ~T0 @X0 1 a ]
-[; ;display7seg.c: 74: int time = 0;
+[; ;display7seg.c: 71: int time = 0;
 [e = _time -> 0 `i ]
-"75
+"72
 [v _dec `s ~T0 @X0 1 a ]
-[; ;display7seg.c: 75: short dec = number/10;
+[; ;display7seg.c: 72: short dec = number/10;
 [e = _dec -> / -> _number `i -> 10 `i `s ]
-"76
+"73
 [v _uni `s ~T0 @X0 1 a ]
-[; ;display7seg.c: 76: short uni = number - dec*10;
+[; ;display7seg.c: 73: short uni = number - dec*10;
 [e = _uni -> - -> _number `i * -> _dec `i -> 10 `i `s ]
-[; ;display7seg.c: 77: clear_Segment();
-"77
+[; ;display7seg.c: 74: clear_Segment();
+"74
 [e ( _clear_Segment ..  ]
-[; ;display7seg.c: 78: while(time < 500){
-"78
+[; ;display7seg.c: 75: while(time < 500){
+"75
 [e $U 1053  ]
 [e :U 1054 ]
 {
-[; ;display7seg.c: 80: on_numbers(uni, 1);
-"80
+[; ;display7seg.c: 76: on_numbers(uni, 1);
+"76
 [e ( _on_numbers (2 , _uni -> -> 1 `i `uc ]
-[; ;display7seg.c: 85: _delay((unsigned long)((10)*(8000000/4000.0)));
-"85
+[; ;display7seg.c: 77: _delay((unsigned long)((10)*(8000000/4000.0)));
+"77
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;display7seg.c: 86: PORTCbits.RC7 = 1;
-"86
+[; ;display7seg.c: 78: PORTCbits.RC7 = 1;
+"78
 [e = . . _PORTCbits 0 7 -> -> 1 `i `uc ]
-[; ;display7seg.c: 87: on_numbers(dec, 0);
-"87
+[; ;display7seg.c: 79: on_numbers(dec, 0);
+"79
 [e ( _on_numbers (2 , _dec -> -> 0 `i `uc ]
-[; ;display7seg.c: 89: PORTBbits.RB0 = 0;
-"89
+[; ;display7seg.c: 80: PORTBbits.RB0 = 0;
+"80
 [e = . . _PORTBbits 0 0 -> -> 0 `i `uc ]
-[; ;display7seg.c: 90: _delay((unsigned long)((10)*(8000000/4000.0)));
-"90
+[; ;display7seg.c: 81: _delay((unsigned long)((10)*(8000000/4000.0)));
+"81
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;display7seg.c: 91: PORTBbits.RB0 = 1;
-"91
+[; ;display7seg.c: 82: PORTBbits.RB0 = 1;
+"82
 [e = . . _PORTBbits 0 0 -> -> 1 `i `uc ]
-[; ;display7seg.c: 93: time = time + 20;
-"93
+[; ;display7seg.c: 83: time = time + 20;
+"83
 [e = _time + _time -> 20 `i ]
-"94
+"84
 }
 [e :U 1053 ]
-"78
+"75
 [e $ < _time -> 500 `i 1054  ]
 [e :U 1055 ]
-[; ;display7seg.c: 94: }
-[; ;display7seg.c: 95: }
-"95
+[; ;display7seg.c: 84: }
+[; ;display7seg.c: 85: }
+"85
 [e :UE 1052 ]
 }
