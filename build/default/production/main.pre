@@ -10000,7 +10000,7 @@ void lcd_putrs(const char *ptr);
 #pragma config WPDIS=OFF
 
 # 7 "ADconversor.h"
-int read_temperature();
+short read_temperature();
 
 # 12 "main.c"
 void caratula(void)
@@ -10029,7 +10029,7 @@ ANCON0=0b11111110;
 
 ANCON1=0b11111111;
 ADCON0=0b01000000;
-ADCON1=0b00010000;
+ADCON1=0b00111000;
 RTCCFGbits.RTCEN=1;
 RTCCFGbits.RTCWREN=1;
 T1CONbits.T1OSCEN=1;

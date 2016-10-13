@@ -48,7 +48,7 @@
     //ANCON1=0b10010111;          // Config AN11 Analog Port
     ANCON1=0b11111111;          // Config AN12 to AN8 Digital Ports
     ADCON0=0b01000000;          // Control AN11 Analog Port
-    ADCON1=0b00010000;          // Config Analog Port
+    ADCON1=0b00111000;          // Config Analog Port
     RTCCFGbits.RTCEN=1;
     RTCCFGbits.RTCWREN=1;
     T1CONbits.T1OSCEN=1;

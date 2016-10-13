@@ -4,7 +4,7 @@
 #include <xc.h>
 #include <unmc_config_01.h>
 
-int read_temperature();
+short read_temperature();
 
 #endif	/* ADCONVERSOR_H */
 

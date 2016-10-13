@@ -88,8 +88,8 @@ RTCCPTR_MASK_YEAR 3
 ]
 "3 C:\display-7-segm\ADconversor.c
 [v _calculate_temperature calculate_temperature `(f  1 e 3 0 ]
-"7
-[v _read_temperature read_temperature `(i  1 e 2 0 ]
+"13
+[v _read_temperature read_temperature `(s  1 e 2 0 ]
 "25 C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
 [v _lcd_send_nibble lcd_send_nibble `(v  1 e 0 0 ]
 "86
@@ -126,6 +126,8 @@ RTCCPTR_MASK_YEAR 3
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
 "44 C:\Program Files\Microchip\xc8\v1.34\sources\common\fttol.c
 [v ___fttol __fttol `(l  1 e 4 0 ]
+"27 C:\Program Files\Microchip\xc8\v1.34\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
 "15 C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 "15 C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul32.c
@@ -378,21 +380,21 @@ RTCCPTR_MASK_YEAR 3
 ]
 [u S242 . 1 `S210 1 . 1 0 `S219 1 . 1 0 `S221 1 . 1 0 `S224 1 . 1 0 `S227 1 . 1 0 `S230 1 . 1 0 `S233 1 . 1 0 `S236 1 . 1 0 `S239 1 . 1 0 ]
 [v _LATBbits LATBbits `VES242  1 e 1 @3978 ]
-[s S1683 . 1 `uc 1 ALRMPTR 1 0 :2:0 
+[s S1684 . 1 `uc 1 ALRMPTR 1 0 :2:0 
 `uc 1 AMASK 1 0 :4:2 
 `uc 1 CHIME 1 0 :1:6 
 `uc 1 ALRMEN 1 0 :1:7 
 ]
 "6740
-[s S1688 . 1 `uc 1 ALRMPTR0 1 0 :1:0 
+[s S1689 . 1 `uc 1 ALRMPTR0 1 0 :1:0 
 `uc 1 ALRMPTR1 1 0 :1:1 
 `uc 1 AMASK0 1 0 :1:2 
 `uc 1 AMASK1 1 0 :1:3 
 `uc 1 AMASK2 1 0 :1:4 
 `uc 1 AMASK3 1 0 :1:5 
 ]
-[u S1695 . 1 `S1683 1 . 1 0 `S1688 1 . 1 0 ]
-[v _ALRMCFGbits ALRMCFGbits `VES1695  1 e 1 @3985 ]
+[u S1696 . 1 `S1684 1 . 1 0 `S1689 1 . 1 0 ]
+[v _ALRMCFGbits ALRMCFGbits `VES1696  1 e 1 @3985 ]
 "6794
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "6850
@@ -554,7 +556,7 @@ RTCCPTR_MASK_YEAR 3
 ]
 [u S94 . 1 `S81 1 . 1 0 `S87 1 . 1 0 ]
 [v _OSCCONbits OSCCONbits `VES94  1 e 1 @4051 ]
-[s S1490 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S1491 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -564,7 +566,7 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "14949
-[s S1499 . 1 `uc 1 . 1 0 :1:0 
+[s S1500 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -573,19 +575,19 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S1508 . 1 `uc 1 . 1 0 :6:0 
+[s S1509 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S1525 . 1 `S1490 1 . 1 0 `S1499 1 . 1 0 `S1508 1 . 1 0 `S1499 1 . 1 0 `S1508 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES1525  1 e 1 @4082 ]
+[u S1526 . 1 `S1491 1 . 1 0 `S1500 1 . 1 0 `S1509 1 . 1 0 `S1500 1 . 1 0 `S1509 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES1526  1 e 1 @4082 ]
 "77 C:\display-7-segm\main.c
 [v _main main `(i  1 e 2 0 ]
 {
 "86
-[v main@temperature temperature `s  1 a 2 62 ]
+[v main@temperature temperature `s  1 a 2 47 ]
 "83
-[v main@count count `s  1 a 2 64 ]
+[v main@count count `s  1 a 2 49 ]
 "97
 } 0
 "70 C:\display-7-segm\display7seg.c
@@ -629,18 +631,51 @@ RTCCPTR_MASK_YEAR 3
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"7 C:\display-7-segm\ADconversor.c
-[v _read_temperature read_temperature `(i  1 e 2 0 ]
+"13 C:\display-7-segm\ADconversor.c
+[v _read_temperature read_temperature `(s  1 e 2 0 ]
 {
-"10
-[v read_temperature@voltage voltage `i  1 a 2 60 ]
-"20
+"16
+[v read_temperature@voltage voltage `i  1 a 2 45 ]
+"27
 } 0
 "3
 [v _calculate_temperature calculate_temperature `(f  1 e 3 0 ]
 {
-[v calculate_temperature@voltage voltage `i  1 p 2 39 ]
-"5
+"4
+[v calculate_temperature@temperature temperature `f  1 a 3 15 ]
+"3
+[v calculate_temperature@voltage voltage `i  1 p 2 12 ]
+"11
+} 0
+"32 C:\Program Files\Microchip\xc8\v1.34\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 11 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"27 C:\Program Files\Microchip\xc8\v1.34\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+{
+[v ___lbtoft@c c `uc  1 a 1 wreg ]
+[v ___lbtoft@c c `uc  1 a 1 wreg ]
+"29
+[v ___lbtoft@c c `uc  1 a 1 11 ]
+"30
+} 0
+"44 C:\Program Files\Microchip\xc8\v1.34\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 37 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 41 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 36 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 27 ]
+"73
 } 0
 "62 C:\Program Files\Microchip\xc8\v1.34\sources\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 3 0 ]
@@ -656,27 +691,6 @@ RTCCPTR_MASK_YEAR 3
 [v ___ftmul@f2 f2 `f  1 p 3 15 ]
 "157
 } 0
-"86 C:\Program Files\Microchip\xc8\v1.34\sources\common\ftadd.c
-[v ___ftadd __ftadd `(f  1 e 3 0 ]
-{
-"88
-[v ___ftadd@exp1 exp1 `uc  1 a 1 38 ]
-[v ___ftadd@exp2 exp2 `uc  1 a 1 37 ]
-[v ___ftadd@sign sign `uc  1 a 1 36 ]
-"86
-[v ___ftadd@f1 f1 `f  1 p 3 27 ]
-[v ___ftadd@f2 f2 `f  1 p 3 30 ]
-"148
-} 0
-"32 C:\Program Files\Microchip\xc8\v1.34\sources\common\awtoft.c
-[v ___awtoft __awtoft `(f  1 e 3 0 ]
-{
-"34
-[v ___awtoft@sign sign `uc  1 a 1 11 ]
-"32
-[v ___awtoft@c c `i  1 p 2 8 ]
-"42
-} 0
 "62 C:\Program Files\Microchip\xc8\v1.34\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
 {
@@ -684,18 +698,6 @@ RTCCPTR_MASK_YEAR 3
 [v ___ftpack@exp exp `uc  1 p 1 3 ]
 [v ___ftpack@sign sign `uc  1 p 1 4 ]
 "86
-} 0
-"44 C:\Program Files\Microchip\xc8\v1.34\sources\common\fttol.c
-[v ___fttol __fttol `(l  1 e 4 0 ]
-{
-"47
-[v ___fttol@lval lval `ul  1 a 4 52 ]
-"46
-[v ___fttol@exp1 exp1 `uc  1 a 1 56 ]
-[v ___fttol@sign1 sign1 `uc  1 a 1 51 ]
-"44
-[v ___fttol@f1 f1 `f  1 p 3 42 ]
-"73
 } 0
 "12 C:\display-7-segm\main.c
 [v _caratula caratula `(v  1 e 0 0 ]
@@ -770,9 +772,9 @@ RTCCPTR_MASK_YEAR 3
 "34 C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
 [v _RtccWriteTime RtccWriteTime `(E7121  1 e 1 0 ]
 {
-[s S1603 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S1604 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
 "36
-[s S1606 . 2 `uc 1 b0 1 0 :1:0 
+[s S1607 . 2 `uc 1 b0 1 0 :1:0 
 `uc 1 b1 1 0 :1:1 
 `uc 1 b2 1 0 :1:2 
 `uc 1 b3 1 0 :1:3 
@@ -789,10 +791,10 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 b14 1 1 :1:6 
 `uc 1 b15 1 1 :1:7 
 ]
-[u S1623 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1603 1 byte 2 0 `S1606 1 bits 2 0 ]
-[v RtccWriteTime@tempHourWDay tempHourWDay `S1623  1 a 2 9 ]
+[u S1624 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1604 1 byte 2 0 `S1607 1 bits 2 0 ]
+[v RtccWriteTime@tempHourWDay tempHourWDay `S1624  1 a 2 9 ]
 "37
-[v RtccWriteTime@tempMinSec tempMinSec `S1623  1 a 2 7 ]
+[v RtccWriteTime@tempMinSec tempMinSec `S1624  1 a 2 7 ]
 "40
 [v RtccWriteTime@wasWrEn wasWrEn `E7121  1 a 1 6 ]
 "42
@@ -809,9 +811,9 @@ RTCCPTR_MASK_YEAR 3
 "35 C:\Program Files\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
 [v _RtccWriteDate RtccWriteDate `(E7121  1 e 1 0 ]
 {
-[s S1603 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S1604 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
 "37
-[s S1606 . 2 `uc 1 b0 1 0 :1:0 
+[s S1607 . 2 `uc 1 b0 1 0 :1:0 
 `uc 1 b1 1 0 :1:1 
 `uc 1 b2 1 0 :1:2 
 `uc 1 b3 1 0 :1:3 
@@ -828,12 +830,12 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 b14 1 1 :1:6 
 `uc 1 b15 1 1 :1:7 
 ]
-[u S1623 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1603 1 byte 2 0 `S1606 1 bits 2 0 ]
-[v RtccWriteDate@tempHourWDay tempHourWDay `S1623  1 a 2 11 ]
+[u S1624 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1604 1 byte 2 0 `S1607 1 bits 2 0 ]
+[v RtccWriteDate@tempHourWDay tempHourWDay `S1624  1 a 2 11 ]
 "38
-[v RtccWriteDate@tempDayMonth tempDayMonth `S1623  1 a 2 9 ]
+[v RtccWriteDate@tempDayMonth tempDayMonth `S1624  1 a 2 9 ]
 "39
-[v RtccWriteDate@tempYear tempYear `S1623  1 a 2 6 ]
+[v RtccWriteDate@tempYear tempYear `S1624  1 a 2 6 ]
 "41
 [v RtccWriteDate@wasWrEn wasWrEn `E7121  1 a 1 8 ]
 "43

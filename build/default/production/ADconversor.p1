@@ -7612,7 +7612,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p x WPCFG=OFF ]
 "36
 [p x WPDIS=OFF ]
-[; ;ADconversor.h: 7: int read_temperature();
+[; ;ADconversor.h: 7: short read_temperature();
 "3 ADconversor.c
 [v _calculate_temperature `(f ~T0 @X0 1 ef1`i ]
 {
@@ -7620,59 +7620,78 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U _calculate_temperature ]
 [v _voltage `i ~T0 @X0 1 r1 ]
 [f ]
-[; ;ADconversor.c: 4: return 0.588 * voltage - 50;
 "4
-[e ) -> - * .0.588 -> _voltage `d -> -> 50 `i `d `f ]
+[v _temperature `f ~T0 @X0 1 a ]
+[; ;ADconversor.c: 4: float temperature = voltage;
+[e = _temperature -> _voltage `f ]
+[; ;ADconversor.c: 6: if(temperature < 0){
+"6
+[e $ ! < _temperature -> -> 0 `i `f 1035  ]
+{
+[; ;ADconversor.c: 7: return 0;
+"7
+[e ) -> -> 0 `i `f ]
 [e $UE 1034  ]
-[; ;ADconversor.c: 5: }
-"5
+"8
+}
+[e :U 1035 ]
+[; ;ADconversor.c: 8: }
+[; ;ADconversor.c: 10: return temperature;
+"10
+[e ) _temperature ]
+[e $UE 1034  ]
+[; ;ADconversor.c: 11: }
+"11
 [e :UE 1034 ]
 }
-"7
-[v _read_temperature `(i ~T0 @X0 1 ef ]
+"13
+[v _read_temperature `(s ~T0 @X0 1 ef ]
 {
-[; ;ADconversor.c: 7: int read_temperature(){
+[; ;ADconversor.c: 13: short read_temperature(){
 [e :U _read_temperature ]
 [f ]
-[; ;ADconversor.c: 8: ADCON0bits.ADON = 1;
-"8
-[e = . . _ADCON0bits 1 0 -> -> 1 `i `uc ]
-[; ;ADconversor.c: 9: ADCON0bits.GO = 1;
-"9
-[e = . . _ADCON0bits 4 1 -> -> 1 `i `uc ]
-"10
-[v _voltage `i ~T0 @X0 1 a ]
-[; ;ADconversor.c: 10: int voltage = 0;
-[e = _voltage -> 0 `i ]
-[; ;ADconversor.c: 12: while(ADCON0bits.GO){
-"12
-[e $U 1036  ]
-[e :U 1037 ]
-{
-[; ;ADconversor.c: 13: _delay((unsigned long)((10)*(8000000/4000.0)));
-"13
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;ADconversor.c: 14: voltage = (int)ADRESH;
+[; ;ADconversor.c: 14: ADCON0bits.ADON = 1;
 "14
-[e = _voltage -> _ADRESH `i ]
-[; ;ADconversor.c: 15: ADCON0bits.GO = voltage == 0;
+[e = . . _ADCON0bits 1 0 -> -> 1 `i `uc ]
+[; ;ADconversor.c: 15: ADCON0bits.GO = 1;
 "15
-[e = . . _ADCON0bits 4 1 -> -> == _voltage -> 0 `i `i `uc ]
+[e = . . _ADCON0bits 4 1 -> -> 1 `i `uc ]
 "16
-}
-[e :U 1036 ]
-"12
-[e $ != -> . . _ADCON0bits 4 1 `i -> -> -> 0 `i `Vuc `i 1037  ]
+[v _voltage `i ~T0 @X0 1 a ]
+[; ;ADconversor.c: 16: int voltage = 0;
+[e = _voltage -> 0 `i ]
+[; ;ADconversor.c: 18: while(ADCON0bits.GO){
+"18
+[e $U 1037  ]
 [e :U 1038 ]
-[; ;ADconversor.c: 16: }
-[; ;ADconversor.c: 17: ADCON0bits.ADON = 0;
-"17
-[e = . . _ADCON0bits 1 0 -> -> 0 `i `uc ]
-[; ;ADconversor.c: 19: return calculate_temperature(voltage);
+{
+[; ;ADconversor.c: 19: _delay((unsigned long)((10)*(8000000/4000.0)));
 "19
-[e ) -> ( _calculate_temperature (1 _voltage `i ]
-[e $UE 1035  ]
-[; ;ADconversor.c: 20: }
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;ADconversor.c: 20: voltage = (int)(ADRESH*1.5);
 "20
-[e :UE 1035 ]
+[e = _voltage -> * -> _ADRESH `d .1.5 `i ]
+[; ;ADconversor.c: 21: _delay((unsigned long)((10)*(8000000/4000.0)));
+"21
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;ADconversor.c: 22: ADCON0bits.GO = voltage == 0;
+"22
+[e = . . _ADCON0bits 4 1 -> -> == _voltage -> 0 `i `i `uc ]
+"23
+}
+[e :U 1037 ]
+"18
+[e $ != -> . . _ADCON0bits 4 1 `i -> -> -> 0 `i `Vuc `i 1038  ]
+[e :U 1039 ]
+[; ;ADconversor.c: 23: }
+[; ;ADconversor.c: 24: ADCON0bits.ADON = 0;
+"24
+[e = . . _ADCON0bits 1 0 -> -> 0 `i `uc ]
+[; ;ADconversor.c: 26: return (short)calculate_temperature(voltage);
+"26
+[e ) -> ( _calculate_temperature (1 _voltage `s ]
+[e $UE 1036  ]
+[; ;ADconversor.c: 27: }
+"27
+[e :UE 1036 ]
 }

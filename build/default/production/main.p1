@@ -190,7 +190,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "5591
 [v _PORTBbits `VS406 ~T0 @X0 0 e@3969 ]
 "7 ADconversor.h
-[v _read_temperature `(i ~T0 @X0 0 ef ]
+[v _read_temperature `(s ~T0 @X0 0 ef ]
 "16 display7seg.h
 [v _write `(v ~T0 @X0 0 ef1`s ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
@@ -7971,7 +7971,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;headers\unmc_lcd_216.h: 107: void lcd_setcursor_vb(int8 visible, int8 blink);
 [; ;headers\unmc_lcd_216.h: 108: void lcd_puts(char *ptr);
 [; ;headers\unmc_lcd_216.h: 109: void lcd_putrs(const char *ptr);
-[; ;ADconversor.h: 7: int read_temperature();
+[; ;ADconversor.h: 7: short read_temperature();
 "12 main.c
 [v _caratula `(v ~T0 @X0 1 ef ]
 "13
@@ -8031,9 +8031,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 50: ADCON0=0b01000000;
 "50
 [e = _ADCON0 -> -> 64 `i `uc ]
-[; ;main.c: 51: ADCON1=0b00010000;
+[; ;main.c: 51: ADCON1=0b00111000;
 "51
-[e = _ADCON1 -> -> 16 `i `uc ]
+[e = _ADCON1 -> -> 56 `i `uc ]
 [; ;main.c: 52: RTCCFGbits.RTCEN=1;
 "52
 [e = . . _RTCCFGbits 0 7 -> -> 1 `i `uc ]
@@ -8124,7 +8124,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "86
 [v _temperature `s ~T0 @X0 1 a ]
 [; ;main.c: 86: short temperature = read_temperature();
-[e = _temperature -> ( _read_temperature ..  `s ]
+[e = _temperature ( _read_temperature ..  ]
 [; ;main.c: 88: write(temperature);
 "88
 [e ( _write (1 _temperature ]

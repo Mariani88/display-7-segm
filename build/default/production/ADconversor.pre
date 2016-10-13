@@ -9797,24 +9797,31 @@ extern __nonreentrant void _delay3(unsigned char);
 #pragma config WPDIS=OFF
 
 # 7 "ADconversor.h"
-int read_temperature();
+short read_temperature();
 
 # 3 "ADconversor.c"
 float calculate_temperature(int voltage){
-return 0.588 * voltage - 50;
+float temperature = voltage;
+
+if(temperature < 0){
+return 0;
 }
 
-int read_temperature(){
+return temperature;
+}
+
+short read_temperature(){
 ADCON0bits.ADON = 1;
 ADCON0bits.GO = 1;
 int voltage = 0;
 
 while(ADCON0bits.GO){
 _delay((unsigned long)((10)*(8000000/4000.0)));
-voltage = (int)ADRESH;
+voltage = (int)(ADRESH*1.5);
+_delay((unsigned long)((10)*(8000000/4000.0)));
 ADCON0bits.GO = voltage == 0;
 }
 ADCON0bits.ADON = 0;
 
-return calculate_temperature(voltage);
+return (short)calculate_temperature(voltage);
 }
