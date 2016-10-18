@@ -10013,7 +10013,7 @@ on_numbers(uni, 1);
 _delay((unsigned long)((10)*(8000000/4000.0)));
 PORTCbits.RC7 = 1;
 on_numbers(dec, 0);
-PORTBbits.RB0 = 0;
+
 _delay((unsigned long)((10)*(8000000/4000.0)));
 PORTBbits.RB0 = 1;
 time = time + 20;

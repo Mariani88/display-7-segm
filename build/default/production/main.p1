@@ -8013,9 +8013,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 40: OSCCONbits.SCS1=0;
 "40
 [e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
-[; ;main.c: 41: TRISA = 0b00001000;
+[; ;main.c: 41: TRISA = 0b11111001;
 "41
-[e = _TRISA -> -> 8 `i `uc ]
+[e = _TRISA -> -> 249 `i `uc ]
 [; ;main.c: 42: TRISB = 0;
 "42
 [e = _TRISB -> -> 0 `i `uc ]
@@ -8113,41 +8113,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 81: PORTBbits.RB0 = 1;
 "81
 [e = . . _PORTBbits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 83: while(1){
 "83
-[v _count `s ~T0 @X0 1 a ]
-[; ;main.c: 83: short count = 0;
-[e = _count -> -> 0 `i `s ]
-[; ;main.c: 85: while(1){
-"85
 [e :U 1044 ]
 {
-"86
+"84
 [v _temperature `s ~T0 @X0 1 a ]
-[; ;main.c: 86: short temperature = read_temperature();
+[; ;main.c: 84: short temperature = read_temperature();
 [e = _temperature ( _read_temperature ..  ]
-[; ;main.c: 88: write(temperature);
-"88
+[; ;main.c: 85: write(temperature);
+"85
 [e ( _write (1 _temperature ]
-[; ;main.c: 90: count++;
-"90
-[e ++ _count -> -> 1 `i `s ]
-[; ;main.c: 92: if(count == 100) count = 0;
-"92
-[e $ ! == -> _count `i -> 100 `i 1046  ]
-[e = _count -> -> 0 `i `s ]
-[e :U 1046 ]
-"94
+"86
 }
 [e :U 1043 ]
-"85
+"83
 [e $U 1044  ]
 [e :U 1045 ]
-[; ;main.c: 94: }
-[; ;main.c: 96: return 0;
-"96
+[; ;main.c: 86: }
+[; ;main.c: 88: return 0;
+"88
 [e ) -> 0 `i ]
 [e $UE 1042  ]
-[; ;main.c: 97: }
-"97
+[; ;main.c: 89: }
+"89
 [e :UE 1042 ]
 }

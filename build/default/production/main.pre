@@ -10019,7 +10019,7 @@ OSCCONbits.IRCF1=1;
 OSCCONbits.IRCF2=1;
 OSCCONbits.SCS0=0;
 OSCCONbits.SCS1=0;
-TRISA = 0b00001000;
+TRISA = 0b11111001;
 TRISB = 0;
 TRISC = 0b0110111;
 
@@ -10057,17 +10057,9 @@ caratula();
 PORTCbits.RC7 = 1;
 PORTBbits.RB0 = 1;
 
-short count = 0;
-
 while(1){
 short temperature = read_temperature();
-
 write(temperature);
-
-count++;
-
-if(count == 100) count = 0;
-
 }
 
 return 0;

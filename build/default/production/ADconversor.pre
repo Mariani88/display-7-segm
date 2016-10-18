@@ -9800,8 +9800,8 @@ extern __nonreentrant void _delay3(unsigned char);
 short read_temperature();
 
 # 3 "ADconversor.c"
-float calculate_temperature(int voltage){
-float temperature = voltage;
+float calculate_temperature(short voltage){
+float temperature = 0.588 * (float)voltage - 50;
 
 if(temperature < 0){
 return 0;
@@ -9813,13 +9813,13 @@ return temperature;
 short read_temperature(){
 ADCON0bits.ADON = 1;
 ADCON0bits.GO = 1;
-int voltage = 0;
+short voltage = -1;
 
 while(ADCON0bits.GO){
-_delay((unsigned long)((10)*(8000000/4000.0)));
-voltage = (int)(ADRESH*1.5);
-_delay((unsigned long)((10)*(8000000/4000.0)));
-ADCON0bits.GO = voltage == 0;
+_delay((unsigned long)((1)*(8000000/4000.0)));
+voltage = (short)(ADRESH);
+
+ADCON0bits.GO = voltage < 0;
 }
 ADCON0bits.ADON = 0;
 

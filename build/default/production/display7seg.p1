@@ -8150,9 +8150,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;display7seg.c: 79: on_numbers(dec, 0);
 "79
 [e ( _on_numbers (2 , _dec -> -> 0 `i `uc ]
-[; ;display7seg.c: 80: PORTBbits.RB0 = 0;
-"80
-[e = . . _PORTBbits 0 0 -> -> 0 `i `uc ]
 [; ;display7seg.c: 81: _delay((unsigned long)((10)*(8000000/4000.0)));
 "81
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]

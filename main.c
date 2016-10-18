@@ -38,7 +38,7 @@
     OSCCONbits.IRCF2=1;
     OSCCONbits.SCS0=0;          //oscilator INTRC
     OSCCONbits.SCS1=0;
-    TRISA = 0b00001000;
+    TRISA = 0b11111001;
     TRISB = 0;
     TRISC = 0b0110111;
     //TRISAbits.TRISA0=1;
@@ -79,18 +79,10 @@ int main(void){
     caratula();
     UNI_OFF;
     DEC_OFF;
-
-    short count = 0;
     
     while(1){
         short temperature = read_temperature();
-        
         write(temperature);
-        
-        count++;
-        
-        if(count == 100) count = 0;
-        
     }    
        
     return 0;

@@ -7614,16 +7614,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p x WPDIS=OFF ]
 [; ;ADconversor.h: 7: short read_temperature();
 "3 ADconversor.c
-[v _calculate_temperature `(f ~T0 @X0 1 ef1`i ]
+[v _calculate_temperature `(f ~T0 @X0 1 ef1`s ]
 {
-[; ;ADconversor.c: 3: float calculate_temperature(int voltage){
+[; ;ADconversor.c: 3: float calculate_temperature(short voltage){
 [e :U _calculate_temperature ]
-[v _voltage `i ~T0 @X0 1 r1 ]
+[v _voltage `s ~T0 @X0 1 r1 ]
 [f ]
 "4
 [v _temperature `f ~T0 @X0 1 a ]
-[; ;ADconversor.c: 4: float temperature = voltage;
-[e = _temperature -> _voltage `f ]
+[; ;ADconversor.c: 4: float temperature = 0.588 * (float)voltage - 50;
+[e = _temperature -> - * .0.588 -> -> _voltage `f `d -> -> 50 `i `d `f ]
 [; ;ADconversor.c: 6: if(temperature < 0){
 "6
 [e $ ! < _temperature -> -> 0 `i `f 1035  ]
@@ -7657,26 +7657,23 @@ Version 3.2 HI-TECH Software Intermediate Code
 "15
 [e = . . _ADCON0bits 4 1 -> -> 1 `i `uc ]
 "16
-[v _voltage `i ~T0 @X0 1 a ]
-[; ;ADconversor.c: 16: int voltage = 0;
-[e = _voltage -> 0 `i ]
+[v _voltage `s ~T0 @X0 1 a ]
+[; ;ADconversor.c: 16: short voltage = -1;
+[e = _voltage -> -U -> 1 `i `s ]
 [; ;ADconversor.c: 18: while(ADCON0bits.GO){
 "18
 [e $U 1037  ]
 [e :U 1038 ]
 {
-[; ;ADconversor.c: 19: _delay((unsigned long)((10)*(8000000/4000.0)));
+[; ;ADconversor.c: 19: _delay((unsigned long)((1)*(8000000/4000.0)));
 "19
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;ADconversor.c: 20: voltage = (int)(ADRESH*1.5);
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;ADconversor.c: 20: voltage = (short)(ADRESH);
 "20
-[e = _voltage -> * -> _ADRESH `d .1.5 `i ]
-[; ;ADconversor.c: 21: _delay((unsigned long)((10)*(8000000/4000.0)));
-"21
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;ADconversor.c: 22: ADCON0bits.GO = voltage == 0;
+[e = _voltage -> _ADRESH `s ]
+[; ;ADconversor.c: 22: ADCON0bits.GO = voltage < 0;
 "22
-[e = . . _ADCON0bits 4 1 -> -> == _voltage -> 0 `i `i `uc ]
+[e = . . _ADCON0bits 4 1 -> -> < -> _voltage `i -> 0 `i `i `uc ]
 "23
 }
 [e :U 1037 ]

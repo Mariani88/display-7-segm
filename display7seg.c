@@ -77,7 +77,7 @@ void write(short number){
         __delay_ms(10);
         UNI_OFF;
         on_numbers(dec, 0);
-        DEC_ON;
+        //DEC_ON;
         __delay_ms(10);
         DEC_OFF;
         time = time + 20;
